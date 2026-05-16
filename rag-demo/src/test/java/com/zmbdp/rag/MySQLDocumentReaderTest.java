@@ -25,7 +25,7 @@ public class MySQLDocumentReaderTest {
         // 创建 MySQLResource 对象，设置你的数据库信息（比如 ip，端口，用户名，密码，查询语句，文档的字段，元数据的字段）
         mysqlResource = new MySQLResource(
                 "localhost", 3306, "mysql",
-                "root", "root",
+                "root", "123456",
                 query, contentColumns, metadataColumns
         );
 
