@@ -55,7 +55,7 @@ public class ReaderTest {
     @Test
     void testTextReader(@Value("classpath:/file/text.txt") Resource resource) {
         TextReader reader = new TextReader(resource);
-        reader.getCustomMetadata().put("name", "张三");
+        reader.getCustomMetadata().put("filename", "重要文档");
         List<Document> documents = reader.get();
         System.out.printf("document size: %d \n", documents.size());
         for (Document document : documents) {
