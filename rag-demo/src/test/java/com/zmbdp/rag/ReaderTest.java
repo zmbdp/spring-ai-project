@@ -55,7 +55,7 @@ public class ReaderTest {
     @Test
     void testTextReader(@Value("classpath:/file/text.txt") Resource resource) {
         TextReader reader = new TextReader(resource);
-        reader.getCustomMetadata().put("name", "张三");
+        reader.getCustomMetadata().put("filename", "重要文档");
         List<Document> documents = reader.get();
         System.out.printf("document size: %d \n", documents.size());
         for (Document document : documents) {
@@ -114,11 +114,11 @@ public class ReaderTest {
     void testPdfReader() {
         PagePdfDocumentReader pdfReader = new PagePdfDocumentReader("classpath:/file/sample1.pdf",
                 PdfDocumentReaderConfig.builder()
-                        .withPageTopMargin(0)
+                        .withPageTopMargin(0) // 设置页面顶部编辑，跳过页眉区域
                         .withPageExtractedTextFormatter(ExtractedTextFormatter.builder()
-                                .withNumberOfTopTextLinesToDelete(0)
+                                .withNumberOfTopTextLinesToDelete(0) // 删除页脚
                                 .build())
-                        .withPagesPerDocument(1)
+                        .withPagesPerDocument(1) // 每页一个文档
                         .build());
 
 //        PagePdfDocumentReader pdfReader = new PagePdfDocumentReader("classpath:/file/sample1.pdf");
