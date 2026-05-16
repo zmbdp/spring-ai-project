@@ -1,0 +1,112 @@
+- generic [ref=e3]:
+  - generic:
+    - generic [ref=e6]:
+      - link "新闻" [ref=e7] [cursor=pointer]:
+        - /url: http://news.baidu.com
+      - link "hao123" [ref=e8] [cursor=pointer]:
+        - /url: https://www.hao123.com?src=from_pc
+      - link "地图" [ref=e9] [cursor=pointer]:
+        - /url: http://map.baidu.com
+      - link "贴吧" [ref=e10] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/
+      - link "视频" [ref=e11] [cursor=pointer]:
+        - /url: https://haokan.baidu.com/?sfrom=baidu-top
+      - link "图片" [ref=e12] [cursor=pointer]:
+        - /url: http://image.baidu.com/
+      - link "网盘" [ref=e13] [cursor=pointer]:
+        - /url: https://pan.baidu.com?from=1026962h
+      - link "文库" [ref=e14] [cursor=pointer]:
+        - /url: https://wenku.baidu.com/?fr=bdpcindex
+      - link "文心" [ref=e15] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?isShowHello=1&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22home_tab%22%7D
+      - link "更多" [ref=e17] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+    - generic [ref=e18]:
+      - generic [ref=e19] [cursor=pointer]: 设置
+      - link "登录" [ref=e20] [cursor=pointer]:
+        - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F&sms=5
+  - generic [ref=e23]:
+    - generic [ref=e24]:
+      - img [ref=e25]
+      - generic:
+        - link "点击一下，了解更多":
+          - /url: //www.baidu.com/s?wd=%E7%99%BE%E5%BA%A6%E7%83%AD%E6%90%9C&sa=ire_dl_gh_logo_texing&rsv_dl=igh_logo_pcs
+    - generic [ref=e30]:
+      - generic [ref=e33]:
+        - textbox "伊朗:停火以来没袭击他国" [active] [ref=e35]
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e49]:
+              - img [ref=e53] [cursor=pointer]
+              - img [ref=e58] [cursor=pointer]
+          - button "百度一下" [ref=e62] [cursor=pointer]
+      - link "复杂问题就找文心助手，深入思考回答更优 " [ref=e66] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?extParams=%7B%22enter_type%22%3A%22home_operate%22%7D&isShowHello=1
+        - img [ref=e67]
+        - generic [ref=e68]:
+          - generic [ref=e69]: 复杂问题就找文心助手，深入思考回答更优
+          - generic [ref=e70]: 
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - link "百度热搜":
+          - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_entry
+          - generic "百度热搜" [ref=e75] [cursor=pointer]: 
+        - generic [ref=e76] [cursor=pointer]:
+          - generic [ref=e77]: 
+          - text: 换一换
+      - list:
+        - listitem [ref=e78]:
+          - link " 习近平会见中国国民党主席郑丽文" [ref=e79] [cursor=pointer]:
+            - /url: https://www.baidu.com/s?wd=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E4%B8%AD%E5%9B%BD%E5%9B%BD%E6%B0%91%E5%85%9A%E4%B8%BB%E5%B8%AD%E9%83%91%E4%B8%BD%E6%96%87&sa=fyb_n_homepage&rsv_dl=fyb_n_homepage&from=super&cl=3&tn=baidutop10&fr=top1000&rsv_idx=2&hisfilter=1
+            - generic [ref=e80]: 
+            - text: 习近平会见中国国民党主席郑丽文
+        - listitem [ref=e82]:
+          - link "5 外交部回应日本“降级”日中关系" [ref=e83] [cursor=pointer]:
+            - /url: https://www.baidu.com/s?wd=%E5%A4%96%E4%BA%A4%E9%83%A8%E5%9B%9E%E5%BA%94%E6%97%A5%E6%9C%AC%E2%80%9C%E9%99%8D%E7%BA%A7%E2%80%9D%E6%97%A5%E4%B8%AD%E5%85%B3%E7%B3%BB&sa=fyb_n_homepage&rsv_dl=fyb_n_homepage&from=super&cl=3&tn=baidutop10&fr=top1000&rsv_idx=2&hisfilter=1
+            - generic [ref=e84]: "5"
+            - text: 外交部回应日本“降级”日中关系
+          - generic [ref=e85]: 热
+        - listitem [ref=e86]:
+          - link "1 中方：美方打压遏制中国已到疯狂程度" [ref=e87] [cursor=pointer]:
+            - /url: https://www.baidu.com/s?wd=%E4%B8%AD%E6%96%B9%EF%BC%9A%E7%BE%8E%E6%96%B9%E6%89%93%E5%8E%8B%E9%81%8F%E5%88%B6%E4%B8%AD%E5%9B%BD%E5%B7%B2%E5%88%B0%E7%96%AF%E7%8B%82%E7%A8%8B%E5%BA%A6&sa=fyb_n_homepage&rsv_dl=fyb_n_homepage&from=super&cl=3&tn=baidutop10&fr=top1000&rsv_idx=2&hisfilter=1
+            - generic [ref=e88]: "1"
+            - text: 中方：美方打压遏制中国已到疯狂程度
+          - generic [ref=e89]: 热
+        - listitem [ref=e90]:
+          - link "6 利用“外挂”当黄牛 打击处理不留情" [ref=e91] [cursor=pointer]:
+            - /url: https://www.baidu.com/s?wd=%E5%88%A9%E7%94%A8%E2%80%9C%E5%A4%96%E6%8C%82%E2%80%9D%E5%BD%93%E9%BB%84%E7%89%9B+%E6%89%93%E5%87%BB%E5%A4%84%E7%90%86%E4%B8%8D%E7%95%99%E6%83%85&sa=fyb_n_homepage&rsv_dl=fyb_n_homepage&from=super&cl=3&tn=baidutop10&fr=top1000&rsv_idx=2&hisfilter=1
+            - generic [ref=e92]: "6"
+            - text: 利用“外挂”当黄牛 打击处理不留情
+        - listitem [ref=e94]:
+          - link "2 朝鲜最高领导人金正恩会见王毅" [ref=e95] [cursor=pointer]:
+            - /url: https://www.baidu.com/s?wd=%E6%9C%9D%E9%B2%9C%E6%9C%80%E9%AB%98%E9%A2%86%E5%AF%BC%E4%BA%BA%E9%87%91%E6%AD%A3%E6%81%A9%E4%BC%9A%E8%A7%81%E7%8E%8B%E6%AF%85&sa=fyb_n_homepage&rsv_dl=fyb_n_homepage&from=super&cl=3&tn=baidutop10&fr=top1000&rsv_idx=2&hisfilter=1
+            - generic [ref=e96]: "2"
+            - text: 朝鲜最高领导人金正恩会见王毅
+          - generic [ref=e97]: 热
+        - listitem [ref=e98]:
+          - link "7 美媒曝光多起疑涉伊朗战事内幕交易" [ref=e99] [cursor=pointer]:
+            - /url: https://www.baidu.com/s?wd=%E7%BE%8E%E5%AA%92%E6%9B%9D%E5%85%89%E5%A4%9A%E8%B5%B7%E7%96%91%E6%B6%89%E4%BC%8A%E6%9C%97%E6%88%98%E4%BA%8B%E5%86%85%E5%B9%95%E4%BA%A4%E6%98%93&sa=fyb_n_homepage&rsv_dl=fyb_n_homepage&from=super&cl=3&tn=baidutop10&fr=top1000&rsv_idx=2&hisfilter=1
+            - generic [ref=e100]: "7"
+            - text: 美媒曝光多起疑涉伊朗战事内幕交易
+          - generic [ref=e101]: 热
+        - listitem [ref=e102]:
+          - link "3 “国补”继续！第二批625亿元资金下达" [ref=e103] [cursor=pointer]:
+            - /url: https://www.baidu.com/s?wd=%E2%80%9C%E5%9B%BD%E8%A1%A5%E2%80%9D%E7%BB%A7%E7%BB%AD%EF%BC%81%E7%AC%AC%E4%BA%8C%E6%89%B9625%E4%BA%BF%E5%85%83%E8%B5%84%E9%87%91%E4%B8%8B%E8%BE%BE&sa=fyb_n_homepage&rsv_dl=fyb_n_homepage&from=super&cl=3&tn=baidutop10&fr=top1000&rsv_idx=2&hisfilter=1
+            - generic [ref=e104]: "3"
+            - text: “国补”继续！第二批625亿元资金下达
+        - listitem [ref=e106]:
+          - link "8 全球最大冰山A23a没了" [ref=e107] [cursor=pointer]:
+            - /url: https://www.baidu.com/s?wd=%E5%85%A8%E7%90%83%E6%9C%80%E5%A4%A7%E5%86%B0%E5%B1%B1A23a%E6%B2%A1%E4%BA%86&sa=fyb_n_homepage&rsv_dl=fyb_n_homepage&from=super&cl=3&tn=baidutop10&fr=top1000&rsv_idx=2&hisfilter=1
+            - generic [ref=e108]: "8"
+            - text: 全球最大冰山A23a没了
+        - listitem [ref=e110]:
+          - link "4 一等功臣牺牲 生前最后一幕令人泪目" [ref=e111] [cursor=pointer]:
+            - /url: https://www.baidu.com/s?wd=%E4%B8%80%E7%AD%89%E5%8A%9F%E8%87%A3%E7%89%BA%E7%89%B2+%E7%94%9F%E5%89%8D%E6%9C%80%E5%90%8E%E4%B8%80%E5%B9%95%E4%BB%A4%E4%BA%BA%E6%B3%AA%E7%9B%AE&sa=fyb_n_homepage&rsv_dl=fyb_n_homepage&from=super&cl=3&tn=baidutop10&fr=top1000&rsv_idx=2&hisfilter=1
+            - generic [ref=e112]: "4"
+            - text: 一等功臣牺牲 生前最后一幕令人泪目
+        - listitem [ref=e114]:
+          - link "9 10万头黑猪让沙漠变绿洲？当地回应" [ref=e115] [cursor=pointer]:
+            - /url: https://www.baidu.com/s?wd=10%E4%B8%87%E5%A4%B4%E9%BB%91%E7%8C%AA%E8%AE%A9%E6%B2%99%E6%BC%A0%E5%8F%98%E7%BB%BF%E6%B4%B2%EF%BC%9F%E5%BD%93%E5%9C%B0%E5%9B%9E%E5%BA%94&sa=fyb_n_homepage&rsv_dl=fyb_n_homepage&from=super&cl=3&tn=baidutop10&fr=top1000&rsv_idx=2&hisfilter=1
+            - generic [ref=e116]: "9"
+            - text: 10万头黑猪让沙漠变绿洲？当地回应

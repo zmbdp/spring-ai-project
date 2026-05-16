@@ -1,0 +1,13 @@
+spring:
+  ai:
+    mcp:
+      server:
+        name: user-info
+        version: 0.0.1
+  main:
+    web-application-type: none
+    banner-mode: off
+
+logging:
+  level:
+    root: OFF

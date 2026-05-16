@@ -1,0 +1,8 @@
+- generic [active]:
+  - generic [ref=e4]: 新闻
+  - generic [ref=e6]:
+    - img [ref=e8]
+    - generic [ref=e26]: 无法连接
+    - generic [ref=e27]: 您需要连接互联网才能使用 Google 新闻
+    - link "重试" [ref=e28] [cursor=pointer]:
+      - /url: .

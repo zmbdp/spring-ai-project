@@ -1,0 +1,7 @@
+[    5629ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://gn-web-assets.api.bbc.com/ngas/latest/dotcom-bootstrap.js:0
+[    7177ms] [ERROR] NGAS load timeout @ https://www.bbc.com/news/world:15
+[    9935ms] Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'notUkIp')
+    at <anonymous> (https://static.files.bbci.co.uk/bbcdotcom/web/20260401-100641-27b89b8af6-2.44.0-3/_next/static/chunks/pages/_app-9fcb3bd03b7eed2d.js:43:18513)
+[    9936ms] Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'notUkIp')
+    at <anonymous> (https://static.files.bbci.co.uk/bbcdotcom/web/20260401-100641-27b89b8af6-2.44.0-3/_next/static/chunks/pages/_app-9fcb3bd03b7eed2d.js:12:5605)
+[   10182ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://static.chartbeat.com/js/chartbeat.js:0

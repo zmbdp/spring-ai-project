@@ -1,0 +1,212 @@
+package com.zmbdp.alibaba;
+
+import com.alibaba.cloud.ai.dashscope.video.DashScopeVideoOptions;
+import com.alibaba.cloud.ai.dashscope.video.VideoMessage;
+import com.alibaba.cloud.ai.dashscope.video.VideoModel;
+import com.alibaba.cloud.ai.dashscope.video.VideoPrompt;
+import com.alibaba.dashscope.aigc.videosynthesis.VideoSynthesis;
+import com.alibaba.dashscope.aigc.videosynthesis.VideoSynthesisParam;
+import com.alibaba.dashscope.aigc.videosynthesis.VideoSynthesisResult;
+import com.alibaba.dashscope.exception.InputRequiredException;
+import com.alibaba.dashscope.exception.NoApiKeyException;
+import com.alibaba.dashscope.utils.JsonUtils;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+@SpringBootTest
+public class VideoModelTest {
+    @Autowired
+    private VideoModel videoModel;
+
+    @Test
+    void text2Video() {
+        // 构建提示词
+        List<VideoMessage> messages = List.of(
+                new VideoMessage("一只猫在太空站划船") // 这里必须随便输入点东西，不然会报错
+        );
+        // 构建模型参数
+        DashScopeVideoOptions options = DashScopeVideoOptions.builder()
+                .model("wanx2.1-t2v-plus")
+                .input(DashScopeVideoOptions.InputOptions.builder()
+                        .prompt("秦始皇征战沙场") // 这里才是真正的提示词
+                        .build())
+                .build();
+        String url = this.videoModel.call(new VideoPrompt(messages, options))
+                .getResult()
+                .getOutput()
+                .videoUrl();
+        System.out.println(url);
+    }
+
+
+    @Test
+    void image2Video() throws NoApiKeyException, InputRequiredException {
+        String imgUrl = "https://n.sinaimg.cn/sinakd20230117ac/214/w1080h2334/20230117/e875-42e7995e77807e060ad58b38c0d6ee7a.jpg";
+        VideoSynthesis vs = new VideoSynthesis();
+        VideoSynthesisParam param =
+                VideoSynthesisParam.builder()
+                        .model("wan2.5-i2v-preview")
+                        .prompt("一名女士端起桌子上的水杯喝水")
+                        .audio(false)
+                        .imgUrl(imgUrl)
+                        .build();
+        System.out.println("please wait...");
+        VideoSynthesisResult result = vs.call(param);
+        System.out.println(JsonUtils.toJson(result));
+    }
+
+    /**
+     * 基于首帧生成视频
+     *
+     * @throws NoApiKeyException
+     * @throws InputRequiredException
+     */
+    @Test
+    void image2Video2() throws NoApiKeyException, InputRequiredException {
+        String imgUrl = "https://p1.ssl.qhmsg.com/t01a4d2f84398894b71.jpg";
+        VideoSynthesis vs = new VideoSynthesis();
+        VideoSynthesisParam param =
+                VideoSynthesisParam.builder()
+                        .model("wan2.2-i2v-flash")
+                        .prompt("一名男士笑了笑, 向我点点头")
+                        .imgUrl(imgUrl)
+                        .build();
+        System.out.println("please wait...");
+        VideoSynthesisResult result = vs.call(param);
+        System.out.println(JsonUtils.toJson(result));
+    }
+
+    /**
+     * 基于首尾帧生成视频
+     */
+    @Test
+    void image2Video3() {
+
+        String firstFrameUrl = "https://wanx.alicdn.com/material/20250318/first_frame.png";
+        String lastFrameUrl = "https://wanx.alicdn.com/material/20250318/last_frame.png";
+
+        Map<String, Object> parameters = new HashMap<>();
+        parameters.put("prompt_extend", true);
+        parameters.put("resolution", "720P");
+
+        VideoSynthesis videoSynthesis = new VideoSynthesis();
+        VideoSynthesisParam param =
+                VideoSynthesisParam.builder()
+                        .model("wan2.2-kf2v-flash")
+                        .prompt("写实风格，一只黑色小猫好奇地看向天空，镜头从平视逐渐上升，最后俯拍它的好奇的眼神。")
+                        .firstFrameUrl(firstFrameUrl)
+                        .lastFrameUrl(lastFrameUrl)
+                        .parameters(parameters)
+                        .build();
+        VideoSynthesisResult result = null;
+        try {
+            System.out.println("---sync call, please wait a moment----");
+            result = videoSynthesis.call(param);
+        } catch (Exception e) {
+            throw new RuntimeException(e.getMessage());
+        }
+        System.out.println(JsonUtils.toJson(result));
+    }
+
+    /**
+     * 特效视频-flying
+     *
+     * @throws NoApiKeyException
+     * @throws InputRequiredException
+     */
+
+    @Test
+    void image2Video4() throws NoApiKeyException, InputRequiredException {
+        String imgUrl = "https://cdn.translate.alibaba.com/r/wanx-demo-1.png";
+        VideoSynthesis vs = new VideoSynthesis();
+        VideoSynthesisParam param =
+                VideoSynthesisParam.builder()
+                        .model("wan2.2-i2v-flash")
+                        .template("flying")
+                        .imgUrl(imgUrl)
+                        .build();
+        System.out.println("please wait...");
+        VideoSynthesisResult result = vs.call(param);
+        System.out.println(JsonUtils.toJson(result));
+    }
+
+    /**
+     * @throws NoApiKeyException
+     * @throws InputRequiredException
+     */
+    @Test
+    void image2Video5() throws NoApiKeyException, InputRequiredException {
+        String imgUrl = "https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/8150385571/p1000087.png";
+        VideoSynthesis vs = new VideoSynthesis();
+        VideoSynthesisParam param =
+                VideoSynthesisParam.builder()
+                        .model("wanx2.1-i2v-plus")
+                        .template("carousel")
+                        .imgUrl(imgUrl)
+                        .build();
+        System.out.println("please wait...");
+        VideoSynthesisResult result = vs.call(param);
+        System.out.println(JsonUtils.toJson(result));
+    }
+
+    /**
+     * 文生视频
+     */
+//    @Test
+//    void text2Video() throws NoApiKeyException, InputRequiredException {
+//        VideoSynthesis vs = new VideoSynthesis();
+//        Map<String, Object> parameters = new HashMap<>();
+//        parameters.put("prompt_extend", true);
+//        parameters.put("watermark", false);
+//        parameters.put("seed", 12345);
+//
+////        VideoSynthesisParam param =
+////                VideoSynthesisParam.builder()
+////                        .model("wan2.5-t2v-preview")
+////                        .prompt("一幅史诗级可爱的场景。一只小巧可爱的卡通小猫将军，身穿细节精致的金色盔甲，头戴一个稍大的头盔，勇敢地站在悬崖上。他骑着一匹虽小但英勇的战马，说：”青海长云暗雪山，孤城遥望玉门关。黄沙百战穿金甲，不破楼兰终不还。“。悬崖下方，一支由老鼠组成的、数量庞大、无穷无尽的军队正带着临时制作的武器向前冲锋。这是一个戏剧性的、大规模的战斗场景，灵感来自中国古代的战争史诗。远处的雪山上空，天空乌云密布。整体氛围是“可爱”与“霸气”的搞笑和史诗般的融合。")
+////                        .audioUrl("https://help-static-aliyun-doc.aliyuncs.com/file-manage-files/zh-CN/20250923/hbiayh/%E4%BB%8E%E5%86%9B%E8%A1%8C.mp3")
+////                        .negativePrompt("")
+////                        .size("832*480")
+////                        .duration(10)
+////                        .parameters(parameters)
+////                        .build();
+//
+//        VideoSynthesisParam param =
+//                VideoSynthesisParam.builder()
+//                        .model("wan2.5-t2v-preview")
+//                        .prompt("动漫风，刚开始是秦始皇骑着北极熊，然后有音乐，音乐唱的是“秦始皇骑北极熊”，然后后面是反过来，北极熊骑着秦始皇，然后这时候音乐唱“北极熊骑秦始皇”，整个过程可以稍微的慢一点，然后背景前半段是古代的风格，后半段是现代的未来科技、赛博朋克风格的，北极熊全程都在笑，秦始皇全程都耷拉着脸，最后收尾的时候，秦始皇一直跪在地上哭。")
+//                        .negativePrompt("")
+//                        .firstFrameUrl("https://chatgpt.com/backend-api/estuary/content?id=file_00000000c0d871faafccbebbc6de35ae&ts=493193&p=fs&cid=1&sig=d4fc9579405063dcb6199ceb9b547e3240e9d9610b6e71893307ca1d7f01e823&v=0")
+//                        .audio(true)
+//                        .size("1920*1080")
+//                        .duration(15)
+//                        .parameters(parameters)
+//                        .build();
+//
+//        System.out.println("please wait...");
+//        VideoSynthesisResult result = vs.call(param);
+//        System.out.println(JsonUtils.toJson(result));
+//    }
+
+    /**
+     * 文生视频
+     */
+    @Test
+    void text2Video2() throws NoApiKeyException, InputRequiredException {
+        VideoSynthesis vs = new VideoSynthesis();
+
+        VideoSynthesisParam param =
+                VideoSynthesisParam.builder()
+                        .model("wanx2.1-t2v-turbo")
+                        .prompt("一只哈士奇在玩电脑, 并抬头看了下主人")
+                        .build();
+        System.out.println("please wait...");
+        VideoSynthesisResult result = vs.call(param);
+        System.out.println(JsonUtils.toJson(result));
+    }
+}

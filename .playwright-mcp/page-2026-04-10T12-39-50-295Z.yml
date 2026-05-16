@@ -1,0 +1,203 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Google 新聞" [ref=e7] [cursor=pointer]:
+        - /url: ./?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+        - generic [ref=e9]: 新聞
+      - generic [ref=e10]:
+        - search [ref=e12]:
+          - combobox "搜尋主題、地點和來源" [ref=e19]
+          - button "進階搜尋" [ref=e20] [cursor=pointer]:
+            - generic [ref=e21]:
+              - generic "進階搜尋" [ref=e22]:
+                - img [ref=e23]
+              - tooltip [ref=e25]: 進階搜尋
+          - button "搜尋" [ref=e26] [cursor=pointer]:
+            - img [ref=e27]
+        - generic [ref=e30]:
+          - generic [ref=e35]:
+            - button "說明" [ref=e36] [cursor=pointer]:
+              - img [ref=e38]
+            - tooltip [ref=e40]: 說明
+          - generic [ref=e45]:
+            - button "設定" [ref=e46] [cursor=pointer]:
+              - img [ref=e48]
+            - tooltip [ref=e51]: 設定
+      - generic [ref=e53]:
+        - button "Google Apps" [ref=e57] [cursor=pointer]:
+          - img [ref=e58]
+        - link "登入" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?passive=1209600&continue=https://news.google.com/home?hl%3Dzh-HK%26gl%3DHK%26ceid%3DHK:zh-Hant&followup=https://news.google.com/home?hl%3Dzh-HK%26gl%3DHK%26ceid%3DHK:zh-Hant&hl=zh-HK&ec=GAZAqgM
+    - navigation [ref=e64]:
+      - tablist [ref=e65]:
+        - tab "主頁" [selected] [ref=e66] [cursor=pointer]:
+          - tab "主頁" [selected] [ref=e67]
+        - tab "為您推薦" [ref=e68] [cursor=pointer]:
+          - tab "為您推薦" [ref=e69]
+        - tab "追蹤中" [ref=e70] [cursor=pointer]:
+          - tab "追蹤中" [ref=e71]
+        - tab "香港" [ref=e74] [cursor=pointer]:
+          - tab "香港" [ref=e75]
+        - tab "國際" [ref=e76] [cursor=pointer]:
+          - tab "國際" [ref=e77]
+        - tab "本地" [ref=e78] [cursor=pointer]:
+          - tab "本地" [ref=e79]
+        - tab "商業" [ref=e80] [cursor=pointer]:
+          - tab "商業" [ref=e81]
+        - tab "科技" [ref=e82] [cursor=pointer]:
+          - tab "科技" [ref=e83]
+        - tab "娛樂" [ref=e84] [cursor=pointer]:
+          - tab "娛樂" [ref=e85]
+        - tab "體育" [ref=e86] [cursor=pointer]:
+          - tab "體育" [ref=e87]
+  - main [ref=e92]:
+    - generic [ref=e95]:
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - heading "更多新聞" [level=2] [ref=e99]
+          - paragraph [ref=e101]: 登入即可獲取您感興趣的報導
+        - generic [ref=e104]:
+          - generic [ref=e106]: 登入
+          - link "登入" [ref=e107] [cursor=pointer]:
+            - /url: https://accounts.google.com/ServiceLogin?hl=zh-HK&continue=https://news.google.com/home?hl%3Dzh-HK%26gl%3DHK%26ceid%3DHK:zh-Hant
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - generic [ref=e112]:
+            - generic [ref=e113]:
+              - link [ref=e115] [cursor=pointer]:
+                - /url: ./read/CBMilwRBVV95cUxOQ25uTm9ySXJxNDNDSlNtS0pSTXoxWXFyMjZtZWRhN1V4N19OWjRtd0VoSUJuczZWUGdtQkcyck0tTE5Edy1wdnVWVHJLSDR4aHM4NDdMRzFnZ3pZd1pSVTExUDQ1T19vZGJrbzlSWXNPVDBqUEg4VDJhcjNMVHNjeW9KRjhaMzlyQlJFOG1HTTJUVERycVJjLTZveGpwWml5aHNUREg2NlB1WTFya250LUlsUHZuLXFRdDc4VHVYRzhTdzZNOF9uNk8tTHQwejNPbW1WYWJ6T0Q5aWtBU3dfWnhScUZmalN4aXpwTnVpR0ZYSnFZNWVudG1nRjFLdERIVkxVMVZxOXRnT0NpNW1UR216WkktR3lJTkJkc0lsXzFLcGotTjZWZ0ZlbXZWZlVXX2tKSUVqQ3J3OG1UbWlUZ20ycWc0bHJzbmRwQThwcGZJMURRcG5zVkFTTjEtVDEyeFR0aVJvaGNmNVZnWDBtOHo4RUp2LWNlWVpFWl85MkVjeS02bFFMSnNaX0NiVmFOMlA3Tk8xd3JCMzlyTTM2cE1yWUlUNFh2cVc5ZlFhOXBLTlJaOUlxYzlPOEZfV2xnMkpfQ1djWnRkRFZTZ1RxOWQ1ZUI0LV9pR3VXaEJ5NkJZSEVqSUpWLUltTTVZeGtyWDZENU8tR2ZnN1lYWHJ4d05lVXZmZWNoRnljSlhhMjhxRDNPeUow?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+              - generic [ref=e117]:
+                - generic [ref=e118]:
+                  - generic [ref=e121]: 星島頭條
+                  - generic [ref=e125]:
+                    - generic:
+                      - button "更多 - 李家鼎家事令楊思琦言論再受關注？曾爆李家關係惡劣：係咁樣打豪仔 網民為思琦妹平反" [ref=e126] [cursor=pointer]:
+                        - img [ref=e128]
+                      - tooltip [ref=e130]: 更多
+                - link "李家鼎家事令楊思琦言論再受關注？曾爆李家關係惡劣：係咁樣打豪仔 網民為思琦妹平反 - 星島頭條 - 5 小時前" [ref=e131] [cursor=pointer]:
+                  - /url: ./read/CBMilwRBVV95cUxOQ25uTm9ySXJxNDNDSlNtS0pSTXoxWXFyMjZtZWRhN1V4N19OWjRtd0VoSUJuczZWUGdtQkcyck0tTE5Edy1wdnVWVHJLSDR4aHM4NDdMRzFnZ3pZd1pSVTExUDQ1T19vZGJrbzlSWXNPVDBqUEg4VDJhcjNMVHNjeW9KRjhaMzlyQlJFOG1HTTJUVERycVJjLTZveGpwWml5aHNUREg2NlB1WTFya250LUlsUHZuLXFRdDc4VHVYRzhTdzZNOF9uNk8tTHQwejNPbW1WYWJ6T0Q5aWtBU3dfWnhScUZmalN4aXpwTnVpR0ZYSnFZNWVudG1nRjFLdERIVkxVMVZxOXRnT0NpNW1UR216WkktR3lJTkJkc0lsXzFLcGotTjZWZ0ZlbXZWZlVXX2tKSUVqQ3J3OG1UbWlUZ20ycWc0bHJzbmRwQThwcGZJMURRcG5zVkFTTjEtVDEyeFR0aVJvaGNmNVZnWDBtOHo4RUp2LWNlWVpFWl85MkVjeS02bFFMSnNaX0NiVmFOMlA3Tk8xd3JCMzlyTTM2cE1yWUlUNFh2cVc5ZlFhOXBLTlJaOUlxYzlPOEZfV2xnMkpfQ1djWnRkRFZTZ1RxOWQ1ZUI0LV9pR3VXaEJ5NkJZSEVqSUpWLUltTTVZeGtyWDZENU8tR2ZnN1lYWHJ4d05lVXZmZWNoRnljSlhhMjhxRDNPeUow?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                  - text: 李家鼎家事令楊思琦言論再受關注？曾爆李家關係惡劣：係咁樣打豪仔 網民為思琦妹平反
+              - figure [ref=e132]
+            - generic [ref=e133]:
+              - time [ref=e134]: 5 小時前
+              - generic [ref=e135]:
+                - link "查看更多頭條和觀點 - 李家鼎家事令楊思琦言論再受關注？曾爆李家關係惡劣：係咁樣打豪仔 網民為思琦妹平反" [ref=e137] [cursor=pointer]:
+                  - /url: ./stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2prMFBmd0VCR0lHVGdhVlhzejhpZ0FQAQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                  - img [ref=e138]
+                - tooltip [ref=e140]: 查看更多頭條和觀點
+          - separator [ref=e141]
+        - generic [ref=e142]:
+          - generic [ref=e145]:
+            - generic [ref=e146]:
+              - link [ref=e148] [cursor=pointer]:
+                - /url: ./read/CBMioAJBVV95cUxPSDl3QUg5bFJpMVJJdTFIZXBRU2lpdkdDWDFWT3VSSEh2UThkc3Q4SXkzWHdNUnJfanVoTVNEcjVmSG1CRDY3WmpUWU5kWG5kS0czanJfN2toVDBhRjlNN1IyUjJQOTY3OUdQV3pDYUpXZDdfWlpCdzFiMDFYZnJpQTRrWnRDWjUwdUVPRm53RVZXMDl4VmxiLWdDc3czbTE5dDlxMy1rcE9UbkRrdzBHWXFUNFJOS2xuWC1xVnFBU1J4RTBWMXllemdjc1R6c0VPMmpvZ2x5b3FHdDQ3SEJDdVdVYzlBdkNJc2xjR210alJBWVlSajRRUWxra19VNHdQZmlDbThvczFtbDU5a25IYzIzVnFHNFg2alI3cVRjVTU?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+              - generic [ref=e150]:
+                - generic [ref=e151]:
+                  - generic [ref=e154]: Yahoo
+                  - generic [ref=e158]:
+                    - generic:
+                      - button "更多 - 持械獨行賊劫灣仔銀行 擸3.6萬元現金奪門逃去" [ref=e159] [cursor=pointer]:
+                        - img [ref=e161]
+                      - tooltip [ref=e163]: 更多
+                - link "持械獨行賊劫灣仔銀行 擸3.6萬元現金奪門逃去 - Yahoo - 4 小時前" [ref=e164] [cursor=pointer]:
+                  - /url: ./read/CBMioAJBVV95cUxPSDl3QUg5bFJpMVJJdTFIZXBRU2lpdkdDWDFWT3VSSEh2UThkc3Q4SXkzWHdNUnJfanVoTVNEcjVmSG1CRDY3WmpUWU5kWG5kS0czanJfN2toVDBhRjlNN1IyUjJQOTY3OUdQV3pDYUpXZDdfWlpCdzFiMDFYZnJpQTRrWnRDWjUwdUVPRm53RVZXMDl4VmxiLWdDc3czbTE5dDlxMy1rcE9UbkRrdzBHWXFUNFJOS2xuWC1xVnFBU1J4RTBWMXllemdjc1R6c0VPMmpvZ2x5b3FHdDQ3SEJDdVdVYzlBdkNJc2xjR210alJBWVlSajRRUWxra19VNHdQZmlDbThvczFtbDU5a25IYzIzVnFHNFg2alI3cVRjVTU?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                  - text: 持械獨行賊劫灣仔銀行 擸3.6萬元現金奪門逃去
+              - figure [ref=e165]
+            - generic [ref=e166]:
+              - time [ref=e167]: 4 小時前
+              - generic [ref=e168]:
+                - link "查看更多頭條和觀點 - 持械獨行賊劫灣仔銀行 擸3.6萬元現金奪門逃去" [ref=e170] [cursor=pointer]:
+                  - /url: ./stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pHa0wzeEVCRk5mX2dHV0FCR0VDZ0FQAQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                  - img [ref=e171]
+                - tooltip [ref=e173]: 查看更多頭條和觀點
+          - separator [ref=e174]
+        - generic [ref=e175]:
+          - generic [ref=e178]:
+            - generic [ref=e179]:
+              - link [ref=e181] [cursor=pointer]:
+                - /url: ./read/CBMijwFBVV95cUxQVm82NE5KUnhGaWpybEh2aTRJWlE3THVyb1hXSmRGVm0wMjFpV2FjbW90RElIa0FlWi0xeDQ3SFNHbGVpdHQxVkpaVnJCUEh4RFFubzN1d0F3N19zODYyYUtoMGlOckZHY0FVVzUzVm5ZYVh1RHZFZHBCQTE0eWctZm9OVEp3eVFiNGFiSGdnRQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+              - generic [ref=e183]:
+                - generic [ref=e184]:
+                  - generic [ref=e187]: on.cc東網
+                  - generic [ref=e191]:
+                    - generic:
+                      - button "更多 - 銀主急出貨 連花園私宅僅「2字頭」拍出 呎價約4300元" [ref=e192] [cursor=pointer]:
+                        - img [ref=e194]
+                      - tooltip [ref=e196]: 更多
+                - link "銀主急出貨 連花園私宅僅「2字頭」拍出 呎價約4300元 - on.cc東網 - 22 小時前" [ref=e197] [cursor=pointer]:
+                  - /url: ./read/CBMijwFBVV95cUxQVm82NE5KUnhGaWpybEh2aTRJWlE3THVyb1hXSmRGVm0wMjFpV2FjbW90RElIa0FlWi0xeDQ3SFNHbGVpdHQxVkpaVnJCUEh4RFFubzN1d0F3N19zODYyYUtoMGlOckZHY0FVVzUzVm5ZYVh1RHZFZHBCQTE0eWctZm9OVEp3eVFiNGFiSGdnRQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                  - text: 銀主急出貨 連花園私宅僅「2字頭」拍出 呎價約4300元
+              - figure [ref=e198]
+            - time [ref=e200]: 22 小時前
+          - separator [ref=e201]
+        - generic [ref=e202]:
+          - generic [ref=e205]:
+            - generic [ref=e206]:
+              - link [ref=e208] [cursor=pointer]:
+                - /url: ./read/CBMipgNBVV95cUxQT0FOeEdQNFU5ODFSaVVPOFZsR3BiS2JUZnhMYTFUa1EyTHE4bnctaFBKM3RybU1XZ1dtMlRTMWlpRm1DY04ycWhRVHo1ZFMwbGNHZkFVQ1FpSVVJT0cwV1JGY0hhUi1TcHFsMHR6NHB3YU44UVAyYmQ0OFNIWnNKcV9Iamd1VzFOY0pua01mbzJMT2VxdVpmLXVZalVHRDlQSHIzSktJZGJpR1JZYVdWeFpJQlFxQ2RnaXZYNXNNVVpObndHcHY5NjNZU2xOYTBYb2xJdmdjWDVhZHZkUlltXzNoX3JDdURxUEdXeXNHNEpQSWNTcHpPb2JaTHJPX0g1eEt1OFFuaVBLVE8tWUpmaVVKTXBLamwyZUZPYW9zeHIwY0plRXJPUVd3dnFnMFZDR01od0hndnZ4Skw3V0dsZS1kYkh6MkdKM0ROcVZKUGFldUdqOEJCVFg2Z0lRT0RhOXNCWlpwRm1ZT05iVnptRnJKdTBHWTBpcmhpU2dVWHNyWENZLUhnNzZtak5HUkZoWUFJWDZUcXZFSVQ5SDMxMlc5aGo3QQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+              - generic [ref=e210]:
+                - generic [ref=e211]:
+                  - generic [ref=e214]: 香港01
+                  - generic [ref=e218]:
+                    - generic:
+                      - button "更多 - 宏福苑聽證會｜批消防承辦商沒有實際視察 居民：只係收錢出文件" [ref=e219] [cursor=pointer]:
+                        - img [ref=e221]
+                      - tooltip [ref=e223]: 更多
+                - link "宏福苑聽證會｜批消防承辦商沒有實際視察 居民：只係收錢出文件 - 香港01 - 5 小時前" [ref=e224] [cursor=pointer]:
+                  - /url: ./read/CBMipgNBVV95cUxQT0FOeEdQNFU5ODFSaVVPOFZsR3BiS2JUZnhMYTFUa1EyTHE4bnctaFBKM3RybU1XZ1dtMlRTMWlpRm1DY04ycWhRVHo1ZFMwbGNHZkFVQ1FpSVVJT0cwV1JGY0hhUi1TcHFsMHR6NHB3YU44UVAyYmQ0OFNIWnNKcV9Iamd1VzFOY0pua01mbzJMT2VxdVpmLXVZalVHRDlQSHIzSktJZGJpR1JZYVdWeFpJQlFxQ2RnaXZYNXNNVVpObndHcHY5NjNZU2xOYTBYb2xJdmdjWDVhZHZkUlltXzNoX3JDdURxUEdXeXNHNEpQSWNTcHpPb2JaTHJPX0g1eEt1OFFuaVBLVE8tWUpmaVVKTXBLamwyZUZPYW9zeHIwY0plRXJPUVd3dnFnMFZDR01od0hndnZ4Skw3V0dsZS1kYkh6MkdKM0ROcVZKUGFldUdqOEJCVFg2Z0lRT0RhOXNCWlpwRm1ZT05iVnptRnJKdTBHWTBpcmhpU2dVWHNyWENZLUhnNzZtak5HUkZoWUFJWDZUcXZFSVQ5SDMxMlc5aGo3QQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                  - text: 宏福苑聽證會｜批消防承辦商沒有實際視察 居民：只係收錢出文件
+              - figure [ref=e225]
+            - generic [ref=e226]:
+              - time [ref=e227]: 5 小時前
+              - generic [ref=e228]:
+                - link "查看更多頭條和觀點 - 宏福苑聽證會｜批消防承辦商沒有實際視察 居民：只係收錢出文件" [ref=e230] [cursor=pointer]:
+                  - /url: ./stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lVeDZUdkVCRVE4ODRSS3poV0tTZ0FQAQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                  - img [ref=e231]
+                - tooltip [ref=e233]: 查看更多頭條和觀點
+          - separator [ref=e234]
+        - generic [ref=e238]:
+          - generic [ref=e239]:
+            - link [ref=e241] [cursor=pointer]:
+              - /url: ./read/CBMiwwJBVV95cUxOTHl3WHVmLXN0aWZqMTJmYnlMb2ZKdGgxS2FNUGJKVXgtcGdDZTFzLU1LajA0Qmo2MVRsTFlQSWxlaDNpXzQ3OHg4S2JFNFhVMXJlTElVN2dpR2pqZkJuaXZVYkFXeEpSQkI4WnJxSTFCdnN5MHhaekxtSjE4eTd2a2JROTV5a0VSM1F6ajViUTVxWFJrUXh5eEJGOUEzZ3Rfb2Y4RVE3S2pUcE5INDVSczlKVWlpNHdVSkNGa1VPeEtPUk5FbTFTSUdLNjFOVzRJV0xiMHpiakpsSDZwcDdZZkRlZEpCSC1QR3dFREhITTBrVHBMNmdMcUhnTS1pVXRkaFE0WllQV3lFOWVDejVhVW40NElpV3kyRjB4SnNKenFFZEV5SEhyNVdEaTNIQ3NCeFl6enNPLTBhQTJDdGhianBEVQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+            - generic [ref=e243]:
+              - generic [ref=e244]:
+                - generic [ref=e247]: 星島頭條
+                - generic [ref=e251]:
+                  - generic:
+                    - button "更多 - 珍惜生命│銅鑼灣女子天台企跳 消防氣墊戒備" [ref=e252] [cursor=pointer]:
+                      - img [ref=e254]
+                    - tooltip [ref=e256]: 更多
+              - link "珍惜生命│銅鑼灣女子天台企跳 消防氣墊戒備 - 星島頭條 - 5 小時前" [ref=e257] [cursor=pointer]:
+                - /url: ./read/CBMiwwJBVV95cUxOTHl3WHVmLXN0aWZqMTJmYnlMb2ZKdGgxS2FNUGJKVXgtcGdDZTFzLU1LajA0Qmo2MVRsTFlQSWxlaDNpXzQ3OHg4S2JFNFhVMXJlTElVN2dpR2pqZkJuaXZVYkFXeEpSQkI4WnJxSTFCdnN5MHhaekxtSjE4eTd2a2JROTV5a0VSM1F6ajViUTVxWFJrUXh5eEJGOUEzZ3Rfb2Y4RVE3S2pUcE5INDVSczlKVWlpNHdVSkNGa1VPeEtPUk5FbTFTSUdLNjFOVzRJV0xiMHpiakpsSDZwcDdZZkRlZEpCSC1QR3dFREhITTBrVHBMNmdMcUhnTS1pVXRkaFE0WllQV3lFOWVDejVhVW40NElpV3kyRjB4SnNKenFFZEV5SEhyNVdEaTNIQ3NCeFl6enNPLTBhQTJDdGhianBEVQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                - text: 珍惜生命│銅鑼灣女子天台企跳 消防氣墊戒備
+            - figure [ref=e258]
+          - generic [ref=e259]:
+            - time [ref=e260]: 5 小時前
+            - generic [ref=e261]:
+              - link "查看更多頭條和觀點 - 珍惜生命│銅鑼灣女子天台企跳 消防氣墊戒備" [ref=e263] [cursor=pointer]:
+                - /url: ./stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pTaHNYeEVCRVdrWVFmMjJFbDVTZ0FQAQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                - img [ref=e264]
+              - tooltip [ref=e266]: 查看更多頭條和觀點
+        - generic [ref=e270]:
+          - generic [ref=e271]:
+            - link [ref=e273] [cursor=pointer]:
+              - /url: ./read/CBMixgJBVV95cUxNcE5pazZqQkROb2pFRVIyNnhUcVdQREs4R0NocHliTS1HOEUyd0ZaSUlQOFd3M1RLNEJaQ01xOUE3VUdXY3FaSlhpMDA4ZzBWazg5Tk9WbkpPNmtMUFBnV2h3czdvb04zU21CYWNwQUNGT0ZiRFBkWjd3eG1CRE9zMGxjYXExd2JmN09MYW91SG5rRmpJRlpHVk52WEVlU3ZHWlpEeXk0bldwQmpQTGNsT0JxNkllQktXUW9ydzlzbExJRUFqOTluYnk3LUlNTDBLbjZiX0N2SDc3cS1HamdHWGxzYXhkb1JWOFlCUjczTHVPUjFZUjRwaGtpenZQVFJZSUFtSjdOQUlfWjgtNW95OG95bHVDRTAwdm05c2Q2MDdZRHNqTWhaNGt2bWhxX3dLUFkxWHVhZlJfdWpFSUl1RGRZQ25qdw?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+            - generic [ref=e275]:
+              - generic [ref=e276]:
+                - generic [ref=e279]: Yahoo 財經
+                - generic [ref=e283]:
+                  - generic:
+                    - button "更多 - 鄧成波兒子鄧耀昇遭申請破產 高院6月9日聆訊" [ref=e284] [cursor=pointer]:
+                      - img [ref=e286]
+                    - tooltip [ref=e288]: 更多
+              - link "鄧成波兒子鄧耀昇遭申請破產 高院6月9日聆訊 - Yahoo 財經 - 7 小時前" [ref=e289] [cursor=pointer]:
+                - /url: ./read/CBMixgJBVV95cUxNcE5pazZqQkROb2pFRVIyNnhUcVdQREs4R0NocHliTS1HOEUyd0ZaSUlQOFd3M1RLNEJaQ01xOUE3VUdXY3FaSlhpMDA4ZzBWazg5Tk9WbkpPNmtMUFBnV2h3czdvb04zU21CYWNwQUNGT0ZiRFBkWjd3eG1CRE9zMGxjYXExd2JmN09MYW91SG5rRmpJRlpHVk52WEVlU3ZHWlpEeXk0bldwQmpQTGNsT0JxNkllQktXUW9ydzlzbExJRUFqOTluYnk3LUlNTDBLbjZiX0N2SDc3cS1HamdHWGxzYXhkb1JWOFlCUjczTHVPUjFZUjRwaGtpenZQVFJZSUFtSjdOQUlfWjgtNW95OG95bHVDRTAwdm05c2Q2MDdZRHNqTWhaNGt2bWhxX3dLUFkxWHVhZlJfdWpFSUl1RGRZQ25qdw?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                - text: 鄧成波兒子鄧耀昇遭申請破產 高院6月9日聆訊
+            - figure [ref=e290]
+          - generic [ref=e291]:
+            - time [ref=e292]: 7 小時前
+            - generic [ref=e293]:
+              - link "查看更多頭條和觀點 - 鄧成波兒子鄧耀昇遭申請破產 高院6月9日聆訊" [ref=e295] [cursor=pointer]:
+                - /url: ./stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lPbDZQd0VCRWhuUkV0NnNwS1l5Z0FQAQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                - img [ref=e296]
+              - tooltip [ref=e298]: 查看更多頭條和觀點

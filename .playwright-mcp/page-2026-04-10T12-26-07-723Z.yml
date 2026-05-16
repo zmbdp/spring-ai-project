@@ -1,0 +1,284 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Google 新聞" [ref=e7] [cursor=pointer]:
+        - /url: ./?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+        - generic [ref=e9]: 新聞
+      - generic [ref=e10]:
+        - search [ref=e12]:
+          - combobox "搜尋主題、地點和來源" [ref=e19]
+          - button "進階搜尋" [ref=e20] [cursor=pointer]:
+            - generic [ref=e21]:
+              - generic "進階搜尋" [ref=e22]:
+                - img [ref=e23]
+              - tooltip [ref=e25]: 進階搜尋
+          - button "搜尋" [ref=e26] [cursor=pointer]:
+            - img [ref=e27]
+        - generic [ref=e30]:
+          - generic [ref=e35]:
+            - button "說明" [ref=e36] [cursor=pointer]:
+              - img [ref=e38]
+            - tooltip [ref=e40]: 說明
+          - generic [ref=e45]:
+            - button "設定" [ref=e46] [cursor=pointer]:
+              - img [ref=e48]
+            - tooltip [ref=e51]: 設定
+      - generic [ref=e53]:
+        - button "Google Apps" [ref=e57] [cursor=pointer]:
+          - img [ref=e58]
+        - link "登入" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?passive=1209600&continue=https://news.google.com/home?hl%3Dzh-HK%26gl%3DHK%26ceid%3DHK:zh-Hant&followup=https://news.google.com/home?hl%3Dzh-HK%26gl%3DHK%26ceid%3DHK:zh-Hant&hl=zh-HK&ec=GAZAqgM
+    - navigation [ref=e64]:
+      - tablist [ref=e65]:
+        - tab "主頁" [selected] [ref=e66] [cursor=pointer]:
+          - tab "主頁" [selected] [ref=e67]
+        - tab "為您推薦" [ref=e68] [cursor=pointer]:
+          - tab "為您推薦" [ref=e69]
+        - tab "追蹤中" [ref=e70] [cursor=pointer]:
+          - tab "追蹤中" [ref=e71]
+        - tab "香港" [ref=e74] [cursor=pointer]:
+          - tab "香港" [ref=e75]
+        - tab "國際" [ref=e76] [cursor=pointer]:
+          - tab "國際" [ref=e77]
+        - tab "本地" [ref=e78] [cursor=pointer]:
+          - tab "本地" [ref=e79]
+        - tab "商業" [ref=e80] [cursor=pointer]:
+          - tab "商業" [ref=e81]
+        - tab "科技" [ref=e82] [cursor=pointer]:
+          - tab "科技" [ref=e83]
+        - tab "娛樂" [ref=e84] [cursor=pointer]:
+          - tab "娛樂" [ref=e85]
+        - tab "體育" [ref=e86] [cursor=pointer]:
+          - tab "體育" [ref=e87]
+  - main [ref=e92]:
+    - generic [ref=e95]:
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - heading "您的摘要" [level=1] [ref=e98]
+          - paragraph [ref=e99]: 4月10日星期五
+        - generic [ref=e102]:
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - generic [ref=e105]: 今天
+              - img [ref=e106]
+              - generic [ref=e107]:
+                - generic [ref=e108]: 26°
+                - generic [ref=e109]: 24°
+            - generic [ref=e110]:
+              - generic [ref=e111]: 週六
+              - img [ref=e112]
+              - generic [ref=e113]:
+                - generic [ref=e114]: 26°
+                - generic [ref=e115]: 24°
+            - generic [ref=e116]:
+              - generic [ref=e117]: 週日
+              - img [ref=e118]
+              - generic [ref=e119]:
+                - generic [ref=e120]: 27°
+                - generic [ref=e121]: 24°
+            - generic [ref=e122]:
+              - generic [ref=e123]: 週一
+              - img [ref=e124]
+              - generic [ref=e125]:
+                - generic [ref=e126]: 27°
+                - generic [ref=e127]: 24°
+          - generic [ref=e128]:
+            - button "展開以查看天氣預測" [ref=e129] [cursor=pointer]:
+              - img [ref=e130]
+            - generic "您當地的天氣, 24°C, 降雨" [ref=e132]:
+              - img "降雨" [ref=e133]:
+                - img [ref=e135]
+              - generic [ref=e151]:
+                - generic [ref=e152]:
+                  - generic [ref=e153]: 您當地的天氣
+                  - button "使用精確位置" [ref=e154] [cursor=pointer]:
+                    - img [ref=e155]
+                - generic [ref=e157]: 24°C
+                - link "Google 天氣" [ref=e158] [cursor=pointer]:
+                  - /url: https://support.google.com/websearch/answer/13687874
+      - generic [ref=e160]:
+        - heading "焦點新聞" [level=3] [ref=e163]:
+          - link "焦點新聞" [ref=e164] [cursor=pointer]:
+            - /url: ./topics/CAAqKggKIiRDQkFTRlFvSUwyMHZNRFZxYUdjU0JYcG9MVWhMR2dKSVN5Z0FQAQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+            - text: 焦點新聞
+            - img [ref=e165]
+        - generic [ref=e170]:
+          - generic [ref=e171]:
+            - generic [ref=e172]:
+              - link [ref=e174] [cursor=pointer]:
+                - /url: ./read/CBMiZkFVX3lxTE42YmVKdHppLXp0Z3B5QWZ0SE1RVXVHMjVoVzVQeWQ5YW5lMGNVbV9BTC1jX1lWSDhvR08waFA3bVZNTWdyZjR6ZmNLWEJBUTV5RTgyd29yUnVieWRYVjdBanNTZmhud9IBa0FVX3lxTE42YlFUUGZyMDNHQ0o5ZDVibWlSeEpZTDNBV0JvNzlPaHRiUXZsY3NNYm1JUFI0TXZ5anBkTV93c1VLdWo1aXh1MldlcUxJd2NGcUVoWFplYm1SNDZMaW5UcDdBVXNZQmpsdHVr?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+              - figure [ref=e175]
+              - generic [ref=e176]:
+                - generic [ref=e179]: BBC
+                - generic [ref=e183]:
+                  - generic:
+                    - button "更多 - 「鄭習會」：國共領袖握手13秒，鄭麗文倡「制度性解決方案」，講話未畢直播被切斷" [ref=e184] [cursor=pointer]:
+                      - img [ref=e186]
+                    - tooltip [ref=e188]: 更多
+              - link "「鄭習會」：國共領袖握手13秒，鄭麗文倡「制度性解決方案」，講話未畢直播被切斷 - BBC - 4 小時前 - 作者：潘柏林" [ref=e189] [cursor=pointer]:
+                - /url: ./read/CBMiZkFVX3lxTE42YmVKdHppLXp0Z3B5QWZ0SE1RVXVHMjVoVzVQeWQ5YW5lMGNVbV9BTC1jX1lWSDhvR08waFA3bVZNTWdyZjR6ZmNLWEJBUTV5RTgyd29yUnVieWRYVjdBanNTZmhud9IBa0FVX3lxTE42YlFUUGZyMDNHQ0o5ZDVibWlSeEpZTDNBV0JvNzlPaHRiUXZsY3NNYm1JUFI0TXZ5anBkTV93c1VLdWo1aXh1MldlcUxJd2NGcUVoWFplYm1SNDZMaW5UcDdBVXNZQmpsdHVr?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                - text: 「鄭習會」：國共領袖握手13秒，鄭麗文倡「制度性解決方案」，講話未畢直播被切斷
+              - generic [ref=e190]:
+                - time [ref=e191]: 4 小時前
+                - separator [ref=e192]
+                - generic [ref=e193]: 作者：潘柏林
+            - generic [ref=e194]:
+              - generic [ref=e195]:
+                - link [ref=e197] [cursor=pointer]:
+                  - /url: ./read/CBMi1wVBVV95cUxPeThrTm8yeGhsYnBVNXNyVkF1eS1MNnI3Nmo3SUhiZDNaZTJzcmIwMFBDZjR4R2RtX2dmMEU0Z2F5bU95dVdfQjg1X1RnYklIREEyMUxoUXpKOGJmcDdXOWRjRmlVMGdYak01YzdxSDB0X25Zckx2NTY0cVNiMVdFMkZDVDVNdTVTbjZ6RVJpSGFZMU82ZG9xbTVTUE53ME5yOENWeFhZazJWZVJKMy1xaWVXVEVVUmRRSGpyY0JQVndVRGFBa1VTOXZNdU0xY2tsQzVPT1FpdjUtUm1Rc0FYV3MxS3d5M0FNa0VnNlhiSWx4Z1JjbzloQWxYamRrOUxocy1Dc0MxRnAzWVJkall1TFFuTDlOb0YwN2FzR2ZURnp1VGVMZERjbmdEaEFCbWhVMmJVTVdWc1cwaXF5alE3UTN2VDJBTkNsUHJDb1NoeFBmc0JWSXQ0QjZzVWQ3alc0NTVpd1dGY0l0WUQ5cVZEUjE2cEQxOVhyOUI5ckJUNTUxRXpkQ3R6ZjY5dloxOUdGbm5EMnhvQjZSYTlleU9CZjJncmN0cjJCNUJSWG9jdkxRamV6dlFPak05ZUxwbl9IQlZIV01aVklJSVd0YUczdENic1pNaHJSdzI1RUZzN2ZMYjRsYVFiZi1vN2x3akJoSjN2S0V2R0kxbGJBX1p5SjYzaDBhb2lYUkRRVW54bk5kbEJDc0JUdmI1LTd4cm9TREZHSDJ4OTQ5YnRaMjh0cFl0QUlpbzlLa1lGSFdBQUlwRVFMVkMycUxiUW83RlN0LUFhOWtPV0FyZGRNbzJUMXdna2oyVHNYQmJ5TXlZZWR6XzVyR2Z5ckZvc2NnbTFnNkMzMTBZZ2h3Q3JaNURvVjJjblUxdzhIdk9JRWJGSHFKb2x0UUxfY3VCYTlCdUM2MEVtMHNFUjc0c0hfSXQ3b1piRktxN1o5MndMQzBEUjZYdlRSZGFF?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                - generic [ref=e198]:
+                  - generic [ref=e201]: 明報新聞網
+                  - generic [ref=e205]:
+                    - generic:
+                      - button "更多 - 習近平晤鄭麗文 習：堅持「九二共識」、反對「台獨」 兩岸未來牢握中國人手中 鄭：冀推動兩岸和平制度化【短片】" [ref=e206] [cursor=pointer]:
+                        - img [ref=e208]
+                      - tooltip [ref=e210]: 更多
+                - link "習近平晤鄭麗文 習：堅持「九二共識」、反對「台獨」 兩岸未來牢握中國人手中 鄭：冀推動兩岸和平制度化【短片】 - 明報新聞網 - 3 小時前" [ref=e211] [cursor=pointer]:
+                  - /url: ./read/CBMi1wVBVV95cUxPeThrTm8yeGhsYnBVNXNyVkF1eS1MNnI3Nmo3SUhiZDNaZTJzcmIwMFBDZjR4R2RtX2dmMEU0Z2F5bU95dVdfQjg1X1RnYklIREEyMUxoUXpKOGJmcDdXOWRjRmlVMGdYak01YzdxSDB0X25Zckx2NTY0cVNiMVdFMkZDVDVNdTVTbjZ6RVJpSGFZMU82ZG9xbTVTUE53ME5yOENWeFhZazJWZVJKMy1xaWVXVEVVUmRRSGpyY0JQVndVRGFBa1VTOXZNdU0xY2tsQzVPT1FpdjUtUm1Rc0FYV3MxS3d5M0FNa0VnNlhiSWx4Z1JjbzloQWxYamRrOUxocy1Dc0MxRnAzWVJkall1TFFuTDlOb0YwN2FzR2ZURnp1VGVMZERjbmdEaEFCbWhVMmJVTVdWc1cwaXF5alE3UTN2VDJBTkNsUHJDb1NoeFBmc0JWSXQ0QjZzVWQ3alc0NTVpd1dGY0l0WUQ5cVZEUjE2cEQxOVhyOUI5ckJUNTUxRXpkQ3R6ZjY5dloxOUdGbm5EMnhvQjZSYTlleU9CZjJncmN0cjJCNUJSWG9jdkxRamV6dlFPak05ZUxwbl9IQlZIV01aVklJSVd0YUczdENic1pNaHJSdzI1RUZzN2ZMYjRsYVFiZi1vN2x3akJoSjN2S0V2R0kxbGJBX1p5SjYzaDBhb2lYUkRRVW54bk5kbEJDc0JUdmI1LTd4cm9TREZHSDJ4OTQ5YnRaMjh0cFl0QUlpbzlLa1lGSFdBQUlwRVFMVkMycUxiUW83RlN0LUFhOWtPV0FyZGRNbzJUMXdna2oyVHNYQmJ5TXlZZWR6XzVyR2Z5ckZvc2NnbTFnNkMzMTBZZ2h3Q3JaNURvVjJjblUxdzhIdk9JRWJGSHFKb2x0UUxfY3VCYTlCdUM2MEVtMHNFUjc0c0hfSXQ3b1piRktxN1o5MndMQzBEUjZYdlRSZGFF?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                  - text: 習近平晤鄭麗文 習：堅持「九二共識」、反對「台獨」 兩岸未來牢握中國人手中 鄭：冀推動兩岸和平制度化【短片】
+                - time [ref=e213]: 3 小時前
+              - generic [ref=e214]:
+                - link [ref=e216] [cursor=pointer]:
+                  - /url: ./read/CBMiU0FVX3lxTE5MRjh6RVNGYWVnMVFvNHBkcjFkU0lSWUYyYkNIV2h4YnhORG15TmlfQmpJWnhtSnlXWmM1RHJzTmhzVjhPRF95OFRSelZaUkZqby1J?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                - generic [ref=e217]:
+                  - generic [ref=e220]: 聯合新聞網
+                  - generic [ref=e224]:
+                    - generic:
+                      - button "更多 - 回應鄭習會總統府斥國民黨淪出賣國家主權道具且失格| 鄭麗文出訪大陸| 要聞" [ref=e225] [cursor=pointer]:
+                        - img [ref=e227]
+                      - tooltip [ref=e229]: 更多
+                - link "回應鄭習會總統府斥國民黨淪出賣國家主權道具且失格| 鄭麗文出訪大陸| 要聞 - 聯合新聞網 - 46 分鐘前" [ref=e230] [cursor=pointer]:
+                  - /url: ./read/CBMiU0FVX3lxTE5MRjh6RVNGYWVnMVFvNHBkcjFkU0lSWUYyYkNIV2h4YnhORG15TmlfQmpJWnhtSnlXWmM1RHJzTmhzVjhPRF95OFRSelZaUkZqby1J?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                  - text: 回應鄭習會總統府斥國民黨淪出賣國家主權道具且失格| 鄭麗文出訪大陸| 要聞
+                - time [ref=e232]: 46 分鐘前
+              - generic [ref=e233]:
+                - link [ref=e235] [cursor=pointer]:
+                  - /url: ./read/CBMid0FVX3lxTE13NHBXaVlFSkx0NVVjXzI2TkxraUdIUVFKdjVybVhLalRXU3JXNm5BVkRtRkZwcE9rTUtCbnU1c25aOVdUSi1zNTZySlNNSnI5M1ZKUUxQTFVfTzJnb3N5Wmw0ZnRoY2dVbXliQ0RjbXhIcmJFektN?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                - generic [ref=e236]:
+                  - generic [ref=e239]: 香港文匯網
+                  - generic [ref=e243]:
+                    - generic:
+                      - button "更多 - 專家解讀：「習鄭會」強調「四個不可」 層層遞進匯聚成「共同信念」 - 神州 - 香港文匯網" [ref=e244] [cursor=pointer]:
+                        - img [ref=e246]
+                      - tooltip [ref=e248]: 更多
+                - link "專家解讀：「習鄭會」強調「四個不可」 層層遞進匯聚成「共同信念」 - 神州 - 香港文匯網 - 香港文匯網 - 55 分鐘前" [ref=e249] [cursor=pointer]:
+                  - /url: ./read/CBMid0FVX3lxTE13NHBXaVlFSkx0NVVjXzI2TkxraUdIUVFKdjVybVhLalRXU3JXNm5BVkRtRkZwcE9rTUtCbnU1c25aOVdUSi1zNTZySlNNSnI5M1ZKUUxQTFVfTzJnb3N5Wmw0ZnRoY2dVbXliQ0RjbXhIcmJFektN?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                  - text: 專家解讀：「習鄭會」強調「四個不可」 層層遞進匯聚成「共同信念」 - 神州 - 香港文匯網
+                - time [ref=e251]: 55 分鐘前
+          - link "查看更多頭條和觀點" [ref=e254] [cursor=pointer]:
+            - /url: ./stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2kxMzVib0VCRS11bU84Qk1RcFNDZ0FQAQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+            - img [ref=e255]
+            - generic [ref=e257]: 查看更多頭條和觀點
+        - generic [ref=e261]:
+          - generic [ref=e262]:
+            - generic [ref=e263]:
+              - link [ref=e265] [cursor=pointer]:
+                - /url: ./read/CBMib0FVX3lxTE1GNmlPT2NfLWRRMEw2TlNsVld2d0VwcFFLRUNLcFljTFlmalR6Wk5YVnRRTEhoMmo3VjUzM3JBQUQ1NUVXc1k0M0R4U09VYjdpU3B2Vm9aTXctSkpxd05QaFNGNTNpS044cER5MWRLRQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+              - figure [ref=e266]
+              - generic [ref=e267]:
+                - generic [ref=e270]: 香港電台新聞網
+                - generic [ref=e274]:
+                  - generic:
+                    - button "更多 - 業界稱政府針對油價措施反應快可解燃眉之急 冀考慮設燃油附加費" [ref=e275] [cursor=pointer]:
+                      - img [ref=e277]
+                    - tooltip [ref=e279]: 更多
+              - link "業界稱政府針對油價措施反應快可解燃眉之急 冀考慮設燃油附加費 - 香港電台新聞網 - 7 小時前" [ref=e280] [cursor=pointer]:
+                - /url: ./read/CBMib0FVX3lxTE1GNmlPT2NfLWRRMEw2TlNsVld2d0VwcFFLRUNLcFljTFlmalR6Wk5YVnRRTEhoMmo3VjUzM3JBQUQ1NUVXc1k0M0R4U09VYjdpU3B2Vm9aTXctSkpxd05QaFNGNTNpS044cER5MWRLRQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                - text: 業界稱政府針對油價措施反應快可解燃眉之急 冀考慮設燃油附加費
+              - time [ref=e282]: 7 小時前
+            - generic [ref=e283]:
+              - generic [ref=e284]:
+                - link [ref=e286] [cursor=pointer]:
+                  - /url: ./read/CBMipwNBVV95cUxPdXlIQWljbFdEUVVhUzBpQjhLTUNpYlY2ekhPcng0eWt5N0dmXzdlYUlfQzJ0MGFEbUR6RERzVHRpdWhQd1ZVX0d2YmNPTkhlVkpveGtfeW9GTWZPc0RTWlU1eDFybU8yRDBVTmpXcFdaamMtZXJWNE85bkJvemZnZFJLMXcwMWs2bzNidGV1M0ZGVlNyUEJqc2txMTVWb2lJU0txYjVMQTdRZnI5cnZsS0tfM3A1TGg5ekFpQ3MwUVR0Z3RzRmJDWmNQTTJzY0g1dUpCbl9XbDZJZklIRVZKTmFFMktYZUhkODdLZE9ycUNmWWVtcndQUDEzNjRNN21LYzBjSjBHcTR6RHc3alZoQ0JIOWxrbFY5bWVtOHBZQkRHRFVablh6MFRKNlhkUkhzQ3FOLWEtZnZLRGlhNVJEaGNMTEdmbVAwZjBBM0J5N3g2OUZYR2ZzT2c1b1dOQVF1NWZzRWhxX3M4cWl3WEF5bWY1dnhEM3ptbEZJTEtpME9KNmF3Sk1VVTVHQUdUck9heWVfVEdYa0NfVTVhMFhackx6VmJTQnM?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                - generic [ref=e287]:
+                  - generic [ref=e290]: Yahoo 財經
+                  - generic [ref=e294]:
+                    - generic:
+                      - button "更多 - 本地｜立法會財委會通過政府柴油補貼18億元撥款申請 為期兩個月" [ref=e295] [cursor=pointer]:
+                        - img [ref=e297]
+                      - tooltip [ref=e299]: 更多
+                - link "本地｜立法會財委會通過政府柴油補貼18億元撥款申請 為期兩個月 - Yahoo 財經 - 3 小時前" [ref=e300] [cursor=pointer]:
+                  - /url: ./read/CBMipwNBVV95cUxPdXlIQWljbFdEUVVhUzBpQjhLTUNpYlY2ekhPcng0eWt5N0dmXzdlYUlfQzJ0MGFEbUR6RERzVHRpdWhQd1ZVX0d2YmNPTkhlVkpveGtfeW9GTWZPc0RTWlU1eDFybU8yRDBVTmpXcFdaamMtZXJWNE85bkJvemZnZFJLMXcwMWs2bzNidGV1M0ZGVlNyUEJqc2txMTVWb2lJU0txYjVMQTdRZnI5cnZsS0tfM3A1TGg5ekFpQ3MwUVR0Z3RzRmJDWmNQTTJzY0g1dUpCbl9XbDZJZklIRVZKTmFFMktYZUhkODdLZE9ycUNmWWVtcndQUDEzNjRNN21LYzBjSjBHcTR6RHc3alZoQ0JIOWxrbFY5bWVtOHBZQkRHRFVablh6MFRKNlhkUkhzQ3FOLWEtZnZLRGlhNVJEaGNMTEdmbVAwZjBBM0J5N3g2OUZYR2ZzT2c1b1dOQVF1NWZzRWhxX3M4cWl3WEF5bWY1dnhEM3ptbEZJTEtpME9KNmF3Sk1VVTVHQUdUck9heWVfVEdYa0NfVTVhMFhackx6VmJTQnM?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                  - text: 本地｜立法會財委會通過政府柴油補貼18億元撥款申請 為期兩個月
+                - time [ref=e302]: 3 小時前
+              - generic [ref=e303]:
+                - link [ref=e305] [cursor=pointer]:
+                  - /url: ./read/CBMib0FVX3lxTFBrTlZYVTNmTFlLR3RRNE9xOHJNNERJMVQySVJsOHV0MjB0TnpZa0JCamM2ZXlCWlAweXFKQmZSX2lzbDZNS09adVlwTlZYZml0MmtObFlMdnFwcjVDcDlfR1J2QWpmc2RRaDlvbzB6RQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                - generic [ref=e306]:
+                  - generic [ref=e309]: 香港電台新聞網
+                  - generic [ref=e313]:
+                    - generic:
+                      - button "更多 - 商用車隧道費減半 政府：的士乘客仍須支付法例訂明隧道費" [ref=e314] [cursor=pointer]:
+                        - img [ref=e316]
+                      - tooltip [ref=e318]: 更多
+                - link "商用車隧道費減半 政府：的士乘客仍須支付法例訂明隧道費 - 香港電台新聞網 - 1 小時前" [ref=e319] [cursor=pointer]:
+                  - /url: ./read/CBMib0FVX3lxTFBrTlZYVTNmTFlLR3RRNE9xOHJNNERJMVQySVJsOHV0MjB0TnpZa0JCamM2ZXlCWlAweXFKQmZSX2lzbDZNS09adVlwTlZYZml0MmtObFlMdnFwcjVDcDlfR1J2QWpmc2RRaDlvbzB6RQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                  - text: 商用車隧道費減半 政府：的士乘客仍須支付法例訂明隧道費
+                - time [ref=e321]: 1 小時前
+              - generic [ref=e322]:
+                - link [ref=e324] [cursor=pointer]:
+                  - /url: ./read/CBMiigRBVV95cUxPM1BQc09QMUdsLTNTLW1IdmxZLTF5dmljcTN1d043YnM0cHo1QXpXS3VUYjh0OVk0Z1FRbzYxRUJISmJ3bWExOUpmTnRfOEVNZGxVb0tRWmZQNGxOYV90WVJRQlN0NnhuN0oyZWgtdlBaRVRWcmswWlI4VlJ3UC1mckhGTEt0c0FoZEtLMnExYWRmTE52ajh4aFZHSEFBdENQZmFYc2E2WVAzQ3RSRmV2NlpWMlhSOVByQmpSZWk5a1J2LTNjeHZ1SURxYUs2TmdLc0R6b3FYcHh5U1MwVDRpSUt4eGVXckpsMXkwY3BiQkIxUU9OVV94b0UyZkhCdmdZaExNQmEweW9mYy1kUFhFNE90SGFLb3lUb1FRY0dMQUhLS0ZLUDZsM2NMSTZwdXdpdFlsN19SLV9GekVMeFN1MFE2NUdrbm9fajg2bVRRZGc5a3lFMG5vLUMxS081dFhIZm1Ca1hyLVpLemV4aFRMRGhPeXdTZ1Y2aTYzZlZ1c0JHb0hEOTZMa1k4WnlZSnhqcTM3a0pTRHhhOER1cmJYc3RaOG9RS3o5WkplNVdYenZ5d2tObmtvMG5oTllYcWZDeEEwcXpzRU5wNjR6V19SY1RfbmZyV2QzZ0kzMmVIYmtOZnRqZl8zcGhrZE5peVVMSm41U291eHR5ZnpGNW4zeW1VTmNQc21QWHc?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                - generic [ref=e325]:
+                  - generic [ref=e328]: 星島頭條
+                  - generic [ref=e332]:
+                    - generic:
+                      - button "更多 - 油價急升︱政府推燃油補貼 運輸界憂油公司「食埋嗰3蚊」 議員倡直接減輕營運者成本壓力" [ref=e333] [cursor=pointer]:
+                        - img [ref=e335]
+                      - tooltip [ref=e337]: 更多
+                - link "油價急升︱政府推燃油補貼 運輸界憂油公司「食埋嗰3蚊」 議員倡直接減輕營運者成本壓力 - 星島頭條 - 8 小時前" [ref=e338] [cursor=pointer]:
+                  - /url: ./read/CBMiigRBVV95cUxPM1BQc09QMUdsLTNTLW1IdmxZLTF5dmljcTN1d043YnM0cHo1QXpXS3VUYjh0OVk0Z1FRbzYxRUJISmJ3bWExOUpmTnRfOEVNZGxVb0tRWmZQNGxOYV90WVJRQlN0NnhuN0oyZWgtdlBaRVRWcmswWlI4VlJ3UC1mckhGTEt0c0FoZEtLMnExYWRmTE52ajh4aFZHSEFBdENQZmFYc2E2WVAzQ3RSRmV2NlpWMlhSOVByQmpSZWk5a1J2LTNjeHZ1SURxYUs2TmdLc0R6b3FYcHh5U1MwVDRpSUt4eGVXckpsMXkwY3BiQkIxUU9OVV94b0UyZkhCdmdZaExNQmEweW9mYy1kUFhFNE90SGFLb3lUb1FRY0dMQUhLS0ZLUDZsM2NMSTZwdXdpdFlsN19SLV9GekVMeFN1MFE2NUdrbm9fajg2bVRRZGc5a3lFMG5vLUMxS081dFhIZm1Ca1hyLVpLemV4aFRMRGhPeXdTZ1Y2aTYzZlZ1c0JHb0hEOTZMa1k4WnlZSnhqcTM3a0pTRHhhOER1cmJYc3RaOG9RS3o5WkplNVdYenZ5d2tObmtvMG5oTllYcWZDeEEwcXpzRU5wNjR6V19SY1RfbmZyV2QzZ0kzMmVIYmtOZnRqZl8zcGhrZE5peVVMSm41U291eHR5ZnpGNW4zeW1VTmNQc21QWHc?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                  - text: 油價急升︱政府推燃油補貼 運輸界憂油公司「食埋嗰3蚊」 議員倡直接減輕營運者成本壓力
+                - time [ref=e340]: 8 小時前
+          - link "查看更多頭條和觀點" [ref=e343] [cursor=pointer]:
+            - /url: ./stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lSNF9YbkVCRlozM2QwYi1EaUtDZ0FQAQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+            - img [ref=e344]
+            - generic [ref=e346]: 查看更多頭條和觀點
+        - generic [ref=e350]:
+          - generic [ref=e351]:
+            - link [ref=e353] [cursor=pointer]:
+              - /url: ./read/CBMisgNBVV95cUxQZy0wQUc2b1dPUWJKTzF5R0lBYnM1Sk90XzBnSFJxemtXcDdjMVVTVHVUUjYyNUtKNlhTWmViRjg0QnNYMVVpaUh3Qk5Cck01MmxXZlpfU3pNaFVoMnVOakVwd25IZmVRajE0bm13cWRqTF9wczBid09JN1R4Z20xZnhrV2JIX3hINVRmOVc3VnBrVjZXa3BscHUzZ3picngxeHc0ajRRaDYzbFpicEwzT3VLdlpHY0ZZWGNWdjFLVmlfSmQ4b05xSTlMajkxNzhGVEZ6WTJ6T3dvMUp5V1ZuckFzdXllUjduZTlCRXd2eW9Oa09GbUh3RWxOUXNRakJSTHdyT2paX2dwa013bjVkRmpQZ0tGcEEyQTRNR09SNnl0eWlkckh3TXhvZmR4blFzalIxNnNxU2RwVEhnNUQyemlwV2hBWlJZZ2piM050TFdCbnRyQmk3UW5GZ2Y1VHRxTFJlXzZSOE9vczRLOE1Xc0JTWWcxcHItSjR4OUZOU08zMDM2dGdEdmFrR0s1T3EtUEhuSVBlNXZXbFJBYmV2Tzl2cTNtZDQxcDZLc3A0TXdUZw?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+            - generic [ref=e355]:
+              - generic [ref=e356]:
+                - generic [ref=e359]: 明報新聞網
+                - generic [ref=e363]:
+                  - generic:
+                    - button "更多 - 持槍匪灣仔東亞銀行掠去現金 騎單車乘港鐵逃 柴灣落網 (15:30) - 20260410 - 港聞" [ref=e364] [cursor=pointer]:
+                      - img [ref=e366]
+                    - tooltip [ref=e368]: 更多
+              - link "持槍匪灣仔東亞銀行掠去現金 騎單車乘港鐵逃 柴灣落網 (15:30) - 20260410 - 港聞 - 明報新聞網 - 1 小時前" [ref=e369] [cursor=pointer]:
+                - /url: ./read/CBMisgNBVV95cUxQZy0wQUc2b1dPUWJKTzF5R0lBYnM1Sk90XzBnSFJxemtXcDdjMVVTVHVUUjYyNUtKNlhTWmViRjg0QnNYMVVpaUh3Qk5Cck01MmxXZlpfU3pNaFVoMnVOakVwd25IZmVRajE0bm13cWRqTF9wczBid09JN1R4Z20xZnhrV2JIX3hINVRmOVc3VnBrVjZXa3BscHUzZ3picngxeHc0ajRRaDYzbFpicEwzT3VLdlpHY0ZZWGNWdjFLVmlfSmQ4b05xSTlMajkxNzhGVEZ6WTJ6T3dvMUp5V1ZuckFzdXllUjduZTlCRXd2eW9Oa09GbUh3RWxOUXNRakJSTHdyT2paX2dwa013bjVkRmpQZ0tGcEEyQTRNR09SNnl0eWlkckh3TXhvZmR4blFzalIxNnNxU2RwVEhnNUQyemlwV2hBWlJZZ2piM050TFdCbnRyQmk3UW5GZ2Y1VHRxTFJlXzZSOE9vczRLOE1Xc0JTWWcxcHItSjR4OUZOU08zMDM2dGdEdmFrR0s1T3EtUEhuSVBlNXZXbFJBYmV2Tzl2cTNtZDQxcDZLc3A0TXdUZw?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                - text: 持槍匪灣仔東亞銀行掠去現金 騎單車乘港鐵逃 柴灣落網 (15:30) - 20260410 - 港聞
+            - figure [ref=e370]
+          - generic [ref=e371]:
+            - time [ref=e372]: 1 小時前
+            - link "查看更多頭條和觀點 - 持槍匪灣仔東亞銀行掠去現金 騎單車乘港鐵逃 柴灣落網 (15:30) - 20260410 - 港聞" [ref=e373] [cursor=pointer]:
+              - /url: ./stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pHa0wzeEVCR00tYVAwMVJ5OU95Z0FQAQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+              - img [ref=e374]
+              - generic [ref=e376]: 查看更多
+        - generic [ref=e380]:
+          - generic [ref=e381]:
+            - link [ref=e383] [cursor=pointer]:
+              - /url: ./read/CBMipgNBVV95cUxQT0FOeEdQNFU5ODFSaVVPOFZsR3BiS2JUZnhMYTFUa1EyTHE4bnctaFBKM3RybU1XZ1dtMlRTMWlpRm1DY04ycWhRVHo1ZFMwbGNHZkFVQ1FpSVVJT0cwV1JGY0hhUi1TcHFsMHR6NHB3YU44UVAyYmQ0OFNIWnNKcV9Iamd1VzFOY0pua01mbzJMT2VxdVpmLXVZalVHRDlQSHIzSktJZGJpR1JZYVdWeFpJQlFxQ2RnaXZYNXNNVVpObndHcHY5NjNZU2xOYTBYb2xJdmdjWDVhZHZkUlltXzNoX3JDdURxUEdXeXNHNEpQSWNTcHpPb2JaTHJPX0g1eEt1OFFuaVBLVE8tWUpmaVVKTXBLamwyZUZPYW9zeHIwY0plRXJPUVd3dnFnMFZDR01od0hndnZ4Skw3V0dsZS1kYkh6MkdKM0ROcVZKUGFldUdqOEJCVFg2Z0lRT0RhOXNCWlpwRm1ZT05iVnptRnJKdTBHWTBpcmhpU2dVWHNyWENZLUhnNzZtak5HUkZoWUFJWDZUcXZFSVQ5SDMxMlc5aGo3QQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+            - generic [ref=e385]:
+              - generic [ref=e386]:
+                - generic [ref=e389]: 香港01
+                - generic [ref=e393]:
+                  - generic:
+                    - button "更多 - 宏福苑聽證會｜批消防承辦商沒有實際視察 居民：只係收錢出文件" [ref=e394] [cursor=pointer]:
+                      - img [ref=e396]
+                    - tooltip [ref=e398]: 更多
+              - link "宏福苑聽證會｜批消防承辦商沒有實際視察 居民：只係收錢出文件 - 香港01 - 5 小時前" [ref=e399] [cursor=pointer]:
+                - /url: ./read/CBMipgNBVV95cUxQT0FOeEdQNFU5ODFSaVVPOFZsR3BiS2JUZnhMYTFUa1EyTHE4bnctaFBKM3RybU1XZ1dtMlRTMWlpRm1DY04ycWhRVHo1ZFMwbGNHZkFVQ1FpSVVJT0cwV1JGY0hhUi1TcHFsMHR6NHB3YU44UVAyYmQ0OFNIWnNKcV9Iamd1VzFOY0pua01mbzJMT2VxdVpmLXVZalVHRDlQSHIzSktJZGJpR1JZYVdWeFpJQlFxQ2RnaXZYNXNNVVpObndHcHY5NjNZU2xOYTBYb2xJdmdjWDVhZHZkUlltXzNoX3JDdURxUEdXeXNHNEpQSWNTcHpPb2JaTHJPX0g1eEt1OFFuaVBLVE8tWUpmaVVKTXBLamwyZUZPYW9zeHIwY0plRXJPUVd3dnFnMFZDR01od0hndnZ4Skw3V0dsZS1kYkh6MkdKM0ROcVZKUGFldUdqOEJCVFg2Z0lRT0RhOXNCWlpwRm1ZT05iVnptRnJKdTBHWTBpcmhpU2dVWHNyWENZLUhnNzZtak5HUkZoWUFJWDZUcXZFSVQ5SDMxMlc5aGo3QQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+                - text: 宏福苑聽證會｜批消防承辦商沒有實際視察 居民：只係收錢出文件
+            - figure [ref=e400]
+          - generic [ref=e401]:
+            - time [ref=e402]: 5 小時前
+            - link "查看更多頭條和觀點 - 宏福苑聽證會｜批消防承辦商沒有實際視察 居民：只係收錢出文件" [ref=e403] [cursor=pointer]:
+              - /url: ./stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lVeDZUdkVCRVE4ODRSS3poV0tTZ0FQAQ?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+              - img [ref=e404]
+              - generic [ref=e406]: 查看更多
+      - heading "本地新聞" [level=3] [ref=e412]:
+        - link "本地新聞" [ref=e413] [cursor=pointer]:
+          - /url: ./topics/CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE?hl=zh-HK&gl=HK&ceid=HK%3Azh-Hant
+          - text: 本地新聞
+          - img [ref=e414]

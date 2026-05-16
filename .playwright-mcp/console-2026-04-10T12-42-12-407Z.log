@@ -1,0 +1,11 @@
+[    1479ms] [LOG] %c%s color: red; background: yellow; font-size: 24px; 警告！ @ /_/mss/boq-dots/_/js/k=boq-dots.DotsSplashUi_desktop_ms.zh_HK.yF4JMXE2J-s.2018.O/am=GAIFAAAAANgFDDA/d=1/excm=_b,_tp,homeview/ed=1/dg=0/wt=2/ujg=1/rs=ALs0n2NTe8CBjKqmon0use5oDoPqK4WNhg/dti=1/m=_b,_tp:280
+[    1479ms] [LOG] %c%s font-size: 18px; 使用此控制台可能允許攻擊者冒充你，並透過稱為 Self-XSS 的惡性攻擊盜取你的資料。
+請勿輸入或貼上任何你不明白的代碼。 @ /_/mss/boq-dots/_/js/k=boq-dots.DotsSplashUi_desktop_ms.zh_HK.yF4JMXE2J-s.2018.O/am=GAIFAAAAANgFDDA/d=1/excm=_b,_tp,homeview/ed=1/dg=0/wt=2/ujg=1/rs=ALs0n2NTe8CBjKqmon0use5oDoPqK4WNhg/dti=1/m=_b,_tp:280
+[    1539ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/productsans/v9/pxiDypQkot1TnFhsFMOfGShVF9eO.woff2 @ https://news.google.com/home?hl=zh-HK&gl=HK&ceid=HK:zh-Hant:527
+[    1560ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/googlesanstext/v25/5aUu9-KzpRiLCAt4Unrc-xIKmCU5qEp2iw.woff2 @ https://news.google.com/home?hl=zh-HK&gl=HK&ceid=HK:zh-Hant:527
+[    1629ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/googlesanstext/v25/5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmhjtg.woff2 @ https://news.google.com/home?hl=zh-HK&gl=HK&ceid=HK:zh-Hant:665
+[    1646ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/googlesans/v58/4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2vgCI.woff2 @ https://news.google.com/home?hl=zh-HK&gl=HK&ceid=HK:zh-Hant:665
+[    1667ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://www.googletagmanager.com/gtag/js?id=G-SYGF1G18MM:0
+[    4788ms] _.Hj
+[    7103ms] _.Hj
+[   18414ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.tdm.com.mo&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL:0

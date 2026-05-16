@@ -1,0 +1,500 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#bbc-main"
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - button "Open menu" [ref=e8] [cursor=pointer]:
+          - img [ref=e9]
+        - link "British Broadcasting Corporation" [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img "British Broadcasting Corporation" [ref=e18]
+    - navigation [ref=e21]:
+      - navigation [ref=e23]:
+        - list [ref=e24]:
+          - listitem [ref=e25]:
+            - link "Home" [ref=e27] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e28]:
+            - link "News" [ref=e30] [cursor=pointer]:
+              - /url: /news
+          - listitem [ref=e31]:
+            - link "Sport" [ref=e33] [cursor=pointer]:
+              - /url: /sport
+          - listitem [ref=e34]:
+            - link "Business" [ref=e36] [cursor=pointer]:
+              - /url: /business
+          - listitem [ref=e37]:
+            - link "Technology" [ref=e39] [cursor=pointer]:
+              - /url: /technology
+          - listitem [ref=e40]:
+            - link "Health" [ref=e42] [cursor=pointer]:
+              - /url: /health
+          - listitem [ref=e43]:
+            - link "Culture" [ref=e45] [cursor=pointer]:
+              - /url: /culture
+          - listitem [ref=e46]:
+            - link "Arts" [ref=e48] [cursor=pointer]:
+              - /url: /arts
+          - listitem [ref=e49]:
+            - link "Travel" [ref=e51] [cursor=pointer]:
+              - /url: /travel
+          - listitem [ref=e52]:
+            - link "Earth" [ref=e54] [cursor=pointer]:
+              - /url: /future-planet
+          - listitem [ref=e55]:
+            - link "Audio" [ref=e57] [cursor=pointer]:
+              - /url: /audio
+          - listitem [ref=e58]:
+            - link "Video" [ref=e60] [cursor=pointer]:
+              - /url: /video
+          - listitem [ref=e61]:
+            - link "Live" [ref=e63] [cursor=pointer]:
+              - /url: /live
+    - main [ref=e64]:
+      - article [ref=e65]:
+        - generic [ref=e69]:
+          - heading "News" [level=1] [ref=e70]:
+            - img "News" [ref=e71]
+          - heading "World" [level=1] [ref=e73]
+        - generic [ref=e76]:
+          - generic [ref=e79]:
+            - link "Rescuers clear rubble in Beirut" [ref=e83] [cursor=pointer]:
+              - /url: /news/articles/cge0xre3d27o
+              - img "Rescuers clear rubble in Beirut" [ref=e85]
+            - link "Trump says Iran's handling of Strait of Hormuz is 'not the agreement we have' The US president accused Iran of \"doing a very poor job\" with the waterway as Israel and Lebanon to begin peace talks. 13 hrs ago Middle East" [ref=e89] [cursor=pointer]:
+              - /url: /news/articles/cge0xre3d27o
+              - generic [ref=e90]:
+                - heading "Trump says Iran's handling of Strait of Hormuz is 'not the agreement we have'" [level=2] [ref=e93]
+                - paragraph [ref=e94]: The US president accused Iran of "doing a very poor job" with the waterway as Israel and Lebanon to begin peace talks.
+                - generic [ref=e95]:
+                  - generic [ref=e96]: 13 hrs ago
+                  - generic: Middle East
+          - generic [ref=e99]:
+            - link "A treated collage featuring close up images of Benjamin Netanyahu and Donald Trump with the Iranian flag edited in the background Ceasefire or no ceasefire, the Middle East's reshuffling is not yet done Both sides have reason to end the war but share no common ground. 16 hrs ago BBC InDepth" [ref=e103] [cursor=pointer]:
+              - /url: /news/articles/cp3l4yk5rlgo
+              - generic [ref=e104]:
+                - img "A treated collage featuring close up images of Benjamin Netanyahu and Donald Trump with the Iranian flag edited in the background" [ref=e108]
+                - generic [ref=e109]:
+                  - heading "Ceasefire or no ceasefire, the Middle East's reshuffling is not yet done" [level=2] [ref=e112]
+                  - paragraph [ref=e113]: Both sides have reason to end the war but share no common ground.
+                  - generic [ref=e114]:
+                    - generic [ref=e115]: 16 hrs ago
+                    - generic: BBC InDepth
+            - link "Russia and Ukraine agree to Orthodox Easter truce Vladimir Putin announced the truce, which will last from Saturday afternoon through Easter Sunday. 3 hrs ago Europe" [ref=e120] [cursor=pointer]:
+              - /url: /news/articles/cn0wkkwev2vo
+              - generic [ref=e122]:
+                - heading "Russia and Ukraine agree to Orthodox Easter truce" [level=2] [ref=e125]
+                - paragraph [ref=e126]: Vladimir Putin announced the truce, which will last from Saturday afternoon through Easter Sunday.
+                - generic [ref=e127]:
+                  - generic [ref=e128]: 3 hrs ago
+                  - generic: Europe
+            - link "White House staff told not to place bets on prediction markets The gambling platforms have grown in popularity, with some users making wagers on conflicts. 13 hrs ago Business" [ref=e133] [cursor=pointer]:
+              - /url: /news/articles/cgld65x396go
+              - generic [ref=e135]:
+                - heading "White House staff told not to place bets on prediction markets" [level=2] [ref=e138]
+                - paragraph [ref=e139]: The gambling platforms have grown in popularity, with some users making wagers on conflicts.
+                - generic [ref=e140]:
+                  - generic [ref=e141]: 13 hrs ago
+                  - generic: Business
+          - link "US First Lady Melania Trump speaks in the Cross Hall of the White House in Washington, DC, on April 9, 2026 Melania Trump denies ties to Jeffrey Epstein and urges hearing for survivors She called rumours that Epstein introduced her to Donald Trump \"mean-spirited attempts to defame my reputation\". 7 hrs ago US & Canada" [ref=e146] [cursor=pointer]:
+            - /url: /news/articles/c3ex07l1qvpo
+            - generic [ref=e147]:
+              - img "US First Lady Melania Trump speaks in the Cross Hall of the White House in Washington, DC, on April 9, 2026" [ref=e151]
+              - generic [ref=e152]:
+                - heading "Melania Trump denies ties to Jeffrey Epstein and urges hearing for survivors" [level=2] [ref=e155]
+                - paragraph [ref=e156]: She called rumours that Epstein introduced her to Donald Trump "mean-spirited attempts to defame my reputation".
+                - generic [ref=e157]:
+                  - generic [ref=e158]: 7 hrs ago
+                  - generic: US & Canada
+          - link "Cheng Li-wun shaking hands with Xi Jinping Taiwan opposition leader meets Xi Jinping in Beijing Cheng Li-wun is the Kuomintang's first sitting leader to visit China in a decade. 7 hrs ago Asia" [ref=e163] [cursor=pointer]:
+            - /url: /news/articles/cj94y87k2ljo
+            - generic [ref=e164]:
+              - img "Cheng Li-wun shaking hands with Xi Jinping" [ref=e168]
+              - generic [ref=e169]:
+                - heading "Taiwan opposition leader meets Xi Jinping in Beijing" [level=2] [ref=e172]
+                - paragraph [ref=e173]: Cheng Li-wun is the Kuomintang's first sitting leader to visit China in a decade.
+                - generic [ref=e174]:
+                  - generic [ref=e175]: 7 hrs ago
+                  - generic: Asia
+          - link "Marla-Svenja Liebich wears a blue hat and dark glasses - with a tattoo on her neck German transgender far-right extremist arrested in Czech Republic German media reports say Marla-Svenja Liebich used to be a member of a neo-Nazi group called Blood and Honour. 5 hrs ago Europe" [ref=e180] [cursor=pointer]:
+            - /url: /news/articles/cn4vdnr8knjo
+            - generic [ref=e181]:
+              - img "Marla-Svenja Liebich wears a blue hat and dark glasses - with a tattoo on her neck" [ref=e185]
+              - generic [ref=e186]:
+                - heading "German transgender far-right extremist arrested in Czech Republic" [level=2] [ref=e189]
+                - paragraph [ref=e190]: German media reports say Marla-Svenja Liebich used to be a member of a neo-Nazi group called Blood and Honour.
+                - generic [ref=e191]:
+                  - generic [ref=e192]: 5 hrs ago
+                  - generic: Europe
+        - generic [ref=e197]:
+          - link "image unavailable A man wearing sunglasses on his head with his arm around a woman. They are standing on the left and each holding a mini American flag. To their right, is an older woman. Behind her is a man. The background appears to be a black curtain. US has let in 4,499 refugees since October - all but three were South African Trump has given priority to Afrikaners, a white minority group he says is being persecuted. South Africa has objected to his characterisation." [ref=e200] [cursor=pointer]:
+            - /url: /news/articles/c4g89kkvenqo
+            - generic [ref=e201]:
+              - generic [ref=e204]:
+                - img "image unavailable" [ref=e205]
+                - img "A man wearing sunglasses on his head with his arm around a woman. They are standing on the left and each holding a mini American flag. To their right, is an older woman. Behind her is a man. The background appears to be a black curtain." [ref=e206]
+              - generic [ref=e207]:
+                - heading "US has let in 4,499 refugees since October - all but three were South African" [level=2] [ref=e210]
+                - paragraph [ref=e211]: Trump has given priority to Afrikaners, a white minority group he says is being persecuted. South Africa has objected to his characterisation.
+          - link "image unavailable Sandeep Singh, an X user, holds up a placard saying 'Restore my X account. Stop silencing voices. Democracy under attack' on a street in India India proposes new rules to regulate news and political posts on social media The changes will give government more power over news-related posts shared by podcasters and influencers." [ref=e214] [cursor=pointer]:
+            - /url: /news/articles/ce9mx2j3xlxo
+            - generic [ref=e215]:
+              - generic [ref=e218]:
+                - img "image unavailable" [ref=e219]
+                - img "Sandeep Singh, an X user, holds up a placard saying 'Restore my X account. Stop silencing voices. Democracy under attack' on a street in India" [ref=e220]
+              - generic [ref=e221]:
+                - heading "India proposes new rules to regulate news and political posts on social media" [level=2] [ref=e224]
+                - paragraph [ref=e225]: The changes will give government more power over news-related posts shared by podcasters and influencers.
+          - link "image unavailable Afrika Bambataa poses with headphones and a red bandana as he points to emblems on his necklaces and shirt Hip-hop pioneer, Afrika Bambaataa, dies aged 68 The Bronx born rapper's global hit Planet Rock is credited with shaping hip-hop in the 1980s." [ref=e228] [cursor=pointer]:
+            - /url: /news/articles/c2evppm30p7o
+            - generic [ref=e229]:
+              - generic [ref=e232]:
+                - img "image unavailable" [ref=e233]
+                - img "Afrika Bambataa poses with headphones and a red bandana as he points to emblems on his necklaces and shirt" [ref=e234]
+              - generic [ref=e235]:
+                - heading "Hip-hop pioneer, Afrika Bambaataa, dies aged 68" [level=2] [ref=e238]
+                - paragraph [ref=e239]: The Bronx born rapper's global hit Planet Rock is credited with shaping hip-hop in the 1980s.
+          - link "image unavailable A Palestinian man attempts to put out the fire that engulfed a car after an Israeli drone strike the killed Mohammed Wishah, a correspondent for Al Jazeera Mubasher, and one other person, in Gaza City, northern Gaza (8 April 2026) Al Jazeera condemns killing of journalist in Israeli strike in Gaza The Israeli military claims Mohammed Wishah was a \"Hamas terrorist\" - which the Qatar-based network has previously denied." [ref=e242] [cursor=pointer]:
+            - /url: /news/articles/cg40nqzvwq2o
+            - generic [ref=e243]:
+              - generic [ref=e246]:
+                - img "image unavailable" [ref=e247]
+                - img "A Palestinian man attempts to put out the fire that engulfed a car after an Israeli drone strike the killed Mohammed Wishah, a correspondent for Al Jazeera Mubasher, and one other person, in Gaza City, northern Gaza (8 April 2026)" [ref=e248]
+              - generic [ref=e249]:
+                - heading "Al Jazeera condemns killing of journalist in Israeli strike in Gaza" [level=2] [ref=e252]
+                - paragraph [ref=e253]: The Israeli military claims Mohammed Wishah was a "Hamas terrorist" - which the Qatar-based network has previously denied.
+          - link "image unavailable The four astronauts on Nasa's Artemis II mission smiling to camera while in a spacecraft with a floating toy gravity ball between them. Artemis crew returning to Earth with 'all the good stuff' from Moon discoveries The four astronauts said they were returning to Earth with \"so many more pictures, so many more stories\"." [ref=e256] [cursor=pointer]:
+            - /url: /news/articles/c70dr45dj1lo
+            - generic [ref=e257]:
+              - generic [ref=e260]:
+                - img "image unavailable" [ref=e261]
+                - img "The four astronauts on Nasa's Artemis II mission smiling to camera while in a spacecraft with a floating toy gravity ball between them." [ref=e262]
+              - generic [ref=e263]:
+                - heading "Artemis crew returning to Earth with 'all the good stuff' from Moon discoveries" [level=2] [ref=e266]
+                - paragraph [ref=e267]: The four astronauts said they were returning to Earth with "so many more pictures, so many more stories".
+        - generic [ref=e269]:
+          - generic [ref=e270]:
+            - separator [ref=e272]
+            - heading "Features" [level=2] [ref=e275]
+          - generic [ref=e276]:
+            - 'link "image unavailable An alley in Singapore lined with dozens of air conditioning units Hot in the city: Energy crisis tests Singapore''s air-con addiction The rise in energy prices has hit Asia particularly hard as many nations are heavily reliant on Gulf oil." [ref=e279] [cursor=pointer]':
+              - /url: /news/articles/c80mxrdvkpjo
+              - generic [ref=e280]:
+                - generic [ref=e283]:
+                  - img "image unavailable" [ref=e284]
+                  - img "An alley in Singapore lined with dozens of air conditioning units" [ref=e285]
+                - generic [ref=e286]:
+                  - 'heading "Hot in the city: Energy crisis tests Singapore''s air-con addiction" [level=2] [ref=e289]'
+                  - paragraph [ref=e290]: The rise in energy prices has hit Asia particularly hard as many nations are heavily reliant on Gulf oil.
+            - link "image unavailable A Lebanese army soldier stands next to a destroyed residential building the day after an Israeli airstrike in the Ain Mreisseh neighbourhood of Beirut Lebanon thought there was a ceasefire - then Israel unleashed deadly blitz Israel says Lebanon is not included in the ceasefire the US agreed to halt the war with Iran." [ref=e293] [cursor=pointer]:
+              - /url: /news/articles/cgk0edynpmzo
+              - generic [ref=e294]:
+                - generic [ref=e297]:
+                  - img "image unavailable" [ref=e298]
+                  - img "A Lebanese army soldier stands next to a destroyed residential building the day after an Israeli airstrike in the Ain Mreisseh neighbourhood of Beirut" [ref=e299]
+                - generic [ref=e300]:
+                  - heading "Lebanon thought there was a ceasefire - then Israel unleashed deadly blitz" [level=2] [ref=e303]
+                  - paragraph [ref=e304]: Israel says Lebanon is not included in the ceasefire the US agreed to halt the war with Iran.
+            - link "image unavailable Head and shoulders pic of Pete Hegseth at the podium of the Pentagon briefing room. He's wearing a well-tailored petrol blue suit with a blue and pink tie on a white shirt. His left hand is raised and his thumb and index finger joined as if emphasising a point Has US achieved its war objectives in Iran? Key US objectives at the start of the war were to stop Iran getting a nuclear weapon and degrading its arsenal." [ref=e307] [cursor=pointer]:
+              - /url: /news/articles/c1krpjr91v2o
+              - generic [ref=e308]:
+                - generic [ref=e311]:
+                  - img "image unavailable" [ref=e312]
+                  - img "Head and shoulders pic of Pete Hegseth at the podium of the Pentagon briefing room. He's wearing a well-tailored petrol blue suit with a blue and pink tie on a white shirt. His left hand is raised and his thumb and index finger joined as if emphasising a point" [ref=e313]
+                - generic [ref=e314]:
+                  - heading "Has US achieved its war objectives in Iran?" [level=2] [ref=e317]
+                  - paragraph [ref=e318]: Key US objectives at the start of the war were to stop Iran getting a nuclear weapon and degrading its arsenal.
+            - link "image unavailable A woman walks past the residential buildings that were damaged by recent strikes at Vahdat town in Karaj, southwest of Tehran on 3 April, with bystanders and other buildings in the background against a sunny blue sky. What we know about the two-week ceasefire between the US and Iran The provisional truce comes more than a month after the US and Israel launched coordinated attacks on Iran." [ref=e321] [cursor=pointer]:
+              - /url: /news/articles/ce84z6y3ke4o
+              - generic [ref=e322]:
+                - generic [ref=e325]:
+                  - img "image unavailable" [ref=e326]
+                  - img "A woman walks past the residential buildings that were damaged by recent strikes at Vahdat town in Karaj, southwest of Tehran on 3 April, with bystanders and other buildings in the background against a sunny blue sky." [ref=e327]
+                - generic [ref=e328]:
+                  - heading "What we know about the two-week ceasefire between the US and Iran" [level=2] [ref=e331]
+                  - paragraph [ref=e332]: The provisional truce comes more than a month after the US and Israel launched coordinated attacks on Iran.
+            - link "image unavailable Voters at a polling station in Benin on 11 January to cast ballots in the parliamentary election Fears over West Africa's Islamist insurgency dominate Benin's election campaign Cross-border raids from militant Islamists are increasingly threatening the West African state's stability." [ref=e335] [cursor=pointer]:
+              - /url: /news/articles/c75k1631e75o
+              - generic [ref=e336]:
+                - generic [ref=e339]:
+                  - img "image unavailable" [ref=e340]
+                  - img "Voters at a polling station in Benin on 11 January to cast ballots in the parliamentary election" [ref=e341]
+                - generic [ref=e342]:
+                  - heading "Fears over West Africa's Islamist insurgency dominate Benin's election campaign" [level=2] [ref=e345]
+                  - paragraph [ref=e346]: Cross-border raids from militant Islamists are increasingly threatening the West African state's stability.
+        - generic [ref=e348]:
+          - generic [ref=e349]:
+            - separator [ref=e351]
+            - heading "Watch/Listen" [level=2] [ref=e354]
+          - generic [ref=e355]:
+            - 'link "image unavailable US First Lady Melania Trump speaks in the Cross Hall of the White House in Washington, DC, on April 9, 2026 Melania Trump: ''I never had a relationship with Epstein'' Watch the first lady''s full statement from the White House as she addresses her links to the late sex offender." [ref=e358] [cursor=pointer]':
+              - /url: /news/videos/c0e7dz0zwd0o
+              - generic [ref=e359]:
+                - generic [ref=e361]:
+                  - generic [ref=e362]:
+                    - img "image unavailable" [ref=e363]
+                    - img "US First Lady Melania Trump speaks in the Cross Hall of the White House in Washington, DC, on April 9, 2026" [ref=e364]
+                  - img [ref=e367]
+                - generic [ref=e369]:
+                  - 'heading "Melania Trump: ''I never had a relationship with Epstein''" [level=2] [ref=e372]'
+                  - paragraph [ref=e373]: Watch the first lady's full statement from the White House as she addresses her links to the late sex offender.
+            - link "image unavailable Hugo Bachega indicating towards rubble in Beirut after air strikes BBC at the site of Israeli air strikes in Beirut At least 182 people were killed and 890 others wounded, according to the Lebanese health ministry." [ref=e376] [cursor=pointer]:
+              - /url: /news/videos/cly9z7xp10wo
+              - generic [ref=e377]:
+                - generic [ref=e379]:
+                  - generic [ref=e380]:
+                    - img "image unavailable" [ref=e381]
+                    - img "Hugo Bachega indicating towards rubble in Beirut after air strikes" [ref=e382]
+                  - img [ref=e385]
+                - generic [ref=e387]:
+                  - heading "BBC at the site of Israeli air strikes in Beirut" [level=2] [ref=e390]
+                  - paragraph [ref=e391]: At least 182 people were killed and 890 others wounded, according to the Lebanese health ministry.
+            - 'link "image unavailable Artemis II crew in Orion capsule Watch: BBC asks Artemis II crew a question in space The BBC’s Science Editor Rebecca Morelle has spoken to the Artemis II crew ahead of their likely splashdown on Saturday." [ref=e394] [cursor=pointer]':
+              - /url: /news/videos/cgk0e12y1kgo
+              - generic [ref=e395]:
+                - generic [ref=e397]:
+                  - generic [ref=e398]:
+                    - img "image unavailable" [ref=e399]
+                    - img "Artemis II crew in Orion capsule" [ref=e400]
+                  - img [ref=e403]
+                - generic [ref=e405]:
+                  - 'heading "Watch: BBC asks Artemis II crew a question in space" [level=2] [ref=e408]'
+                  - paragraph [ref=e409]: The BBC’s Science Editor Rebecca Morelle has spoken to the Artemis II crew ahead of their likely splashdown on Saturday.
+            - 'link "image unavailable Pope spinning a basketball on his finger with the help of a Harlem Globetrotter player Watch: Pope Leo XIV spins basketball on his finger, with help from Harlem Globetrotters US exhibition squad, the Harlem Globetrotters, met the pontiff in the Vatican, helping him to spin a basketball on the tip of his finger." [ref=e412] [cursor=pointer]':
+              - /url: /news/videos/cdrmnj7rz42o
+              - generic [ref=e413]:
+                - generic [ref=e415]:
+                  - generic [ref=e416]:
+                    - img "image unavailable" [ref=e417]
+                    - img "Pope spinning a basketball on his finger with the help of a Harlem Globetrotter player" [ref=e418]
+                  - img [ref=e421]
+                - generic [ref=e423]:
+                  - 'heading "Watch: Pope Leo XIV spins basketball on his finger, with help from Harlem Globetrotters" [level=2] [ref=e426]'
+                  - paragraph [ref=e427]: US exhibition squad, the Harlem Globetrotters, met the pontiff in the Vatican, helping him to spin a basketball on the tip of his finger.
+        - generic [ref=e429]:
+          - generic [ref=e433]:
+            - separator [ref=e435]
+            - heading "Latest updates" [level=2] [ref=e438]
+          - generic [ref=e439]:
+            - link "Just now image unavailable The Angermanland District Court building in Harnosand, Sweden. Man accused of coercing wife into sex with 120 men goes on trial in Sweden The 61-year-old denies threatening physical violence and plying his wife with drugs to force her into having sex with strangers." [ref=e445] [cursor=pointer]:
+              - /url: /news/articles/cx24pdwx588o
+              - generic [ref=e446]:
+                - generic [ref=e449]: Just now
+                - generic [ref=e450]:
+                  - generic [ref=e453]:
+                    - img "image unavailable" [ref=e454]
+                    - img "The Angermanland District Court building in Harnosand, Sweden." [ref=e455]
+                  - generic [ref=e456]:
+                    - heading "Man accused of coercing wife into sex with 120 men goes on trial in Sweden" [level=2] [ref=e459]
+                    - paragraph [ref=e460]: The 61-year-old denies threatening physical violence and plying his wife with drugs to force her into having sex with strangers.
+            - link "16 mins ago image unavailable 'Breaking' graphic Man arrested on suspicion of endangering life over deaths of four people trying to cross Channel Two men and two women, whose identities have not yet been released, died when they tried to board a water taxi off the coast of Saint Etienne au Mont, near Calais." [ref=e466] [cursor=pointer]:
+              - /url: /news/articles/c208k07em0mo
+              - generic [ref=e467]:
+                - generic [ref=e470]: 16 mins ago
+                - generic [ref=e471]:
+                  - generic [ref=e474]:
+                    - img "image unavailable" [ref=e475]
+                    - img "'Breaking' graphic" [ref=e476]
+                  - generic [ref=e477]:
+                    - heading "Man arrested on suspicion of endangering life over deaths of four people trying to cross Channel" [level=2] [ref=e480]
+                    - paragraph [ref=e481]: Two men and two women, whose identities have not yet been released, died when they tried to board a water taxi off the coast of Saint Etienne au Mont, near Calais.
+            - link "29 mins ago image unavailable A petrol pump that has a page that says out of stock 500 Irish petrol stations could have 'no fuel by end of night' Travel across parts of the Republic of Ireland has been affected for the fourth day in a row on Friday as vehicles, including tractors, block roads." [ref=e487] [cursor=pointer]:
+              - /url: /news/articles/cy814wypp5go
+              - generic [ref=e488]:
+                - generic [ref=e491]: 29 mins ago
+                - generic [ref=e492]:
+                  - generic [ref=e495]:
+                    - img "image unavailable" [ref=e496]
+                    - img "A petrol pump that has a page that says out of stock" [ref=e497]
+                  - generic [ref=e498]:
+                    - heading "500 Irish petrol stations could have 'no fuel by end of night'" [level=2] [ref=e501]
+                    - paragraph [ref=e502]: Travel across parts of the Republic of Ireland has been affected for the fourth day in a row on Friday as vehicles, including tractors, block roads.
+            - link "51 mins ago image unavailable Five forensic staff wearing white hazmat suits, plastic hair nets and blue medical masks work under a large tented enclosure during the excavation. They are kneeling on wooden gangways in a large pit and leaning into shallow graves-like hollows, scraping at the soil. Plastic buckets are placed beside some of the workers. One worker is writing on a clipboard. Mother and baby home dig uncovers remains of another 36 children The remains of 69 infants have now been found in an ongoing dig at the former mother and baby home site in the Republic of Ireland." [ref=e508] [cursor=pointer]:
+              - /url: /news/articles/c86e5x6yggno
+              - generic [ref=e509]:
+                - generic [ref=e512]: 51 mins ago
+                - generic [ref=e513]:
+                  - generic [ref=e516]:
+                    - img "image unavailable" [ref=e517]
+                    - img "Five forensic staff wearing white hazmat suits, plastic hair nets and blue medical masks work under a large tented enclosure during the excavation. They are kneeling on wooden gangways in a large pit and leaning into shallow graves-like hollows, scraping at the soil. Plastic buckets are placed beside some of the workers. One worker is writing on a clipboard." [ref=e518]
+                  - generic [ref=e519]:
+                    - heading "Mother and baby home dig uncovers remains of another 36 children" [level=2] [ref=e522]
+                    - paragraph [ref=e523]: The remains of 69 infants have now been found in an ongoing dig at the former mother and baby home site in the Republic of Ireland.
+            - link "1 hr ago image unavailable A composite image shows Iran's Supreme Leader, Mojtaba Khamenei, Pakistan's military chief, Field Marshal Asim Munir, and Prime Minister, Shehbaz Sharif, and US President Donald Trump superimposed over the national flag of Pakistan. The high-stakes diplomacy that led to Pakistan hosting US-Iran peace talks Critical minerals, cryptocurrency, and CIA co-operation - how Asim Munir, Trump’s “favourite field marshal”, may have pulled off the diplomatic coup of the century." [ref=e532] [cursor=pointer]:
+              - /url: /news/articles/c3dl0g4rgn5o
+              - generic [ref=e533]:
+                - generic [ref=e536]: 1 hr ago
+                - generic [ref=e537]:
+                  - generic [ref=e540]:
+                    - img "image unavailable" [ref=e541]
+                    - img "A composite image shows Iran's Supreme Leader, Mojtaba Khamenei, Pakistan's military chief, Field Marshal Asim Munir, and Prime Minister, Shehbaz Sharif, and US President Donald Trump superimposed over the national flag of Pakistan." [ref=e542]
+                  - generic [ref=e543]:
+                    - heading "The high-stakes diplomacy that led to Pakistan hosting US-Iran peace talks" [level=2] [ref=e546]
+                    - paragraph [ref=e547]: Critical minerals, cryptocurrency, and CIA co-operation - how Asim Munir, Trump’s “favourite field marshal”, may have pulled off the diplomatic coup of the century.
+            - link "2 hrs ago image unavailable A finger touching a phone screen showing the apps of Facebook, Instagram, Messenger and Whatsapp Dutch police urge victims of 'international sextortion campaign' to come forward Dutch police have warned that dozens of women and girls were coerced into degrading sexual acts on camera in several countries." [ref=e553] [cursor=pointer]:
+              - /url: /news/articles/ce84nl4gnz2o
+              - generic [ref=e554]:
+                - generic [ref=e557]: 2 hrs ago
+                - generic [ref=e558]:
+                  - generic [ref=e561]:
+                    - img "image unavailable" [ref=e562]
+                    - img "A finger touching a phone screen showing the apps of Facebook, Instagram, Messenger and Whatsapp" [ref=e563]
+                  - generic [ref=e564]:
+                    - heading "Dutch police urge victims of 'international sextortion campaign' to come forward" [level=2] [ref=e567]
+                    - paragraph [ref=e568]: Dutch police have warned that dozens of women and girls were coerced into degrading sexual acts on camera in several countries.
+            - link "3 hrs ago image unavailable A woman clutching her head scarf looks at a building destroyed by an Israeli air strike, Beirut (09/04/26) Lebanon says ceasefire must be in place before Israel talks Lebanon will only take part in talks with Israel if a ceasefire is already in place, a senior official tells the BBC." [ref=e574] [cursor=pointer]:
+              - /url: /news/articles/c93en5q2zl3o
+              - generic [ref=e575]:
+                - generic [ref=e578]: 3 hrs ago
+                - generic [ref=e579]:
+                  - generic [ref=e582]:
+                    - img "image unavailable" [ref=e583]
+                    - img "A woman clutching her head scarf looks at a building destroyed by an Israeli air strike, Beirut (09/04/26)" [ref=e584]
+                  - generic [ref=e585]:
+                    - heading "Lebanon says ceasefire must be in place before Israel talks" [level=2] [ref=e588]
+                    - paragraph [ref=e589]: Lebanon will only take part in talks with Israel if a ceasefire is already in place, a senior official tells the BBC.
+            - link "3 hrs ago image unavailable Close-up of musician Sefu Shabani in a black bandana with a white design posing with his hands near his face. He is wearing a chunky gold chain necklace and bracelet. Popular Tanzanian musician Matonya charged with rape in Kenya The 43-year-old denies the charge and has been released on bail and had to surrender his passport." [ref=e595] [cursor=pointer]:
+              - /url: /news/articles/cwydvrj4vgzo
+              - generic [ref=e596]:
+                - generic [ref=e599]: 3 hrs ago
+                - generic [ref=e600]:
+                  - generic [ref=e603]:
+                    - img "image unavailable" [ref=e604]
+                    - img "Close-up of musician Sefu Shabani in a black bandana with a white design posing with his hands near his face. He is wearing a chunky gold chain necklace and bracelet." [ref=e605]
+                  - generic [ref=e606]:
+                    - heading "Popular Tanzanian musician Matonya charged with rape in Kenya" [level=2] [ref=e609]
+                    - paragraph [ref=e610]: The 43-year-old denies the charge and has been released on bail and had to surrender his passport.
+            - link "3 hrs ago Metropolitan Epiphanius I, head of the Orthodox Church of Ukraine, sprinkles holy water to bless Easter cakes which are to be transferred to Ukrainian servicemen fighting on the frontline amid Russia's attack on Ukraine, during a ceremony at St Michael's Cathedral before Orthodox Easter, in Kyiv, Ukraine April 9, 2026. Russia and Ukraine agree to Orthodox Easter truce Vladimir Putin announced the truce, which will last from Saturday afternoon through Easter Sunday." [ref=e616] [cursor=pointer]:
+              - /url: /news/articles/cn0wkkwev2vo
+              - generic [ref=e617]:
+                - generic [ref=e620]: 3 hrs ago
+                - generic [ref=e621]:
+                  - img "Metropolitan Epiphanius I, head of the Orthodox Church of Ukraine, sprinkles holy water to bless Easter cakes which are to be transferred to Ukrainian servicemen fighting on the frontline amid Russia's attack on Ukraine, during a ceremony at St Michael's Cathedral before Orthodox Easter, in Kyiv, Ukraine April 9, 2026." [ref=e625]
+                  - generic [ref=e626]:
+                    - heading "Russia and Ukraine agree to Orthodox Easter truce" [level=2] [ref=e629]
+                    - paragraph [ref=e630]: Vladimir Putin announced the truce, which will last from Saturday afternoon through Easter Sunday.
+            - generic [ref=e634]:
+              - button:
+                - img
+              - generic [ref=e635]: ...
+              - button:
+                - img
+    - separator [ref=e636]
+    - contentinfo [ref=e637]:
+      - link "British Broadcasting Corporation" [ref=e640] [cursor=pointer]:
+        - /url: /
+        - img "British Broadcasting Corporation" [ref=e641]
+      - navigation "Footer navigation" [ref=e644]:
+        - list [ref=e645]:
+          - listitem [ref=e646]:
+            - link "Home" [ref=e648] [cursor=pointer]:
+              - /url: https://www.bbc.com/
+          - listitem [ref=e649]:
+            - link "News" [ref=e651] [cursor=pointer]:
+              - /url: /news
+          - listitem [ref=e652]:
+            - link "Sport" [ref=e654] [cursor=pointer]:
+              - /url: /sport
+          - listitem [ref=e655]:
+            - link "Business" [ref=e657] [cursor=pointer]:
+              - /url: /business
+          - listitem [ref=e658]:
+            - link "Technology" [ref=e660] [cursor=pointer]:
+              - /url: /technology
+          - listitem [ref=e661]:
+            - link "Health" [ref=e663] [cursor=pointer]:
+              - /url: /health
+          - listitem [ref=e664]:
+            - link "Culture" [ref=e666] [cursor=pointer]:
+              - /url: /culture
+          - listitem [ref=e667]:
+            - link "Arts" [ref=e669] [cursor=pointer]:
+              - /url: /arts
+          - listitem [ref=e670]:
+            - link "Travel" [ref=e672] [cursor=pointer]:
+              - /url: /travel
+          - listitem [ref=e673]:
+            - link "Earth" [ref=e675] [cursor=pointer]:
+              - /url: /future-planet
+          - listitem [ref=e676]:
+            - link "Audio" [ref=e678] [cursor=pointer]:
+              - /url: /audio
+          - listitem [ref=e679]:
+            - link "Video" [ref=e681] [cursor=pointer]:
+              - /url: /video
+          - listitem [ref=e682]:
+            - link "Live" [ref=e684] [cursor=pointer]:
+              - /url: /live
+          - listitem [ref=e685]:
+            - link "Weather" [ref=e687] [cursor=pointer]:
+              - /url: https://www.bbc.com/weather
+          - listitem [ref=e688]:
+            - link "BBC Shop" [ref=e690] [cursor=pointer]:
+              - /url: https://shop.bbc.com/
+          - listitem [ref=e691]:
+            - link "BritBox" [ref=e693] [cursor=pointer]:
+              - /url: https://www.britbox.com/?utm_source=bbc.com&utm_medium=referral&utm_campaign=footer
+      - button "BBC in other languages" [ref=e696] [cursor=pointer]:
+        - text: BBC in other languages
+        - img [ref=e698]
+      - generic [ref=e700]:
+        - generic [ref=e701]: "Follow BBC on:"
+        - generic [ref=e702]:
+          - button "Follow BBC on x" [ref=e703]:
+            - img [ref=e704]
+          - button "Follow BBC on facebook" [ref=e706]:
+            - img [ref=e707]
+          - button "Follow BBC on instagram" [ref=e709]:
+            - img [ref=e710]
+          - button "Follow BBC on tiktok" [ref=e712]:
+            - img [ref=e713]
+          - button "Follow BBC on linkedin" [ref=e715]:
+            - img [ref=e716]
+          - button "Follow BBC on youtube" [ref=e718]:
+            - img [ref=e719]
+      - navigation [ref=e722]:
+        - list [ref=e723]:
+          - listitem [ref=e724]:
+            - link "Terms of Use" [ref=e726] [cursor=pointer]:
+              - /url: https://www.bbc.com/pages/terms-of-use
+          - listitem [ref=e727]:
+            - link "Subscription Terms" [ref=e729] [cursor=pointer]:
+              - /url: https://www.bbc.com/pages/subscription-terms
+          - listitem [ref=e730]:
+            - link "About the BBC" [ref=e732] [cursor=pointer]:
+              - /url: https://www.bbc.co.uk/aboutthebbc
+          - listitem [ref=e733]:
+            - link "Privacy Policy" [ref=e735] [cursor=pointer]:
+              - /url: https://www.bbc.com/pages/privacy-policy
+          - listitem [ref=e736]:
+            - link "Cookies" [ref=e738] [cursor=pointer]:
+              - /url: https://www.bbc.com/usingthebbc/cookies/
+          - listitem [ref=e739]:
+            - link "Accessibility Help" [ref=e741] [cursor=pointer]:
+              - /url: https://www.bbc.co.uk/accessibility/
+          - listitem [ref=e742]:
+            - link "Contact the BBC" [ref=e744] [cursor=pointer]:
+              - /url: https://www.bbc.co.uk/contact
+          - listitem [ref=e745]:
+            - link "Advertise with us" [ref=e747] [cursor=pointer]:
+              - /url: https://advertising.bbcstudios.com/
+          - listitem [ref=e748]:
+            - link "Do not share or sell my info" [ref=e750] [cursor=pointer]:
+              - /url: https://www.bbc.com/usingthebbc/cookies/how-can-i-change-my-bbc-cookie-settings/
+          - listitem [ref=e751]:
+            - link "BBC.com Help & FAQs" [ref=e753] [cursor=pointer]:
+              - /url: https://help.bbc.com/hc/
+          - listitem [ref=e754]:
+            - link "Content Index" [ref=e756] [cursor=pointer]:
+              - /url: https://www.bbc.com/pages/content-index
+          - listitem [ref=e757]:
+            - link "Set Preferred Source" [ref=e759] [cursor=pointer]:
+              - /url: https://www.bbc.com/future/article/20260128-how-to-make-google-put-trusted-sources-up-top-when-you-search
+      - generic [ref=e760]:
+        - paragraph [ref=e761]:
+          - text: Copyright 2026 BBC. All rights reserved. The BBC is not responsible for the content of external sites.
+          - link "Read about our approach to external linking." [ref=e762] [cursor=pointer]:
+            - /url: https://www.bbc.co.uk/editorialguidelines/guidance/feeds-and-links
+        - paragraph [ref=e763]
+  - alert [ref=e764]

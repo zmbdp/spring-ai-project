@@ -1,0 +1,21 @@
+spring:
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+#      audio:
+#        synthesis:
+#          options:
+#            model: "cosyvoice-v2"
+#            voice: longanqin
+
+#      image:
+#        options:
+#          model: qwen-image-plus
+
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  level:
+    #    root: debug
+    org.springframework.ai.retry.autoconfigure: error

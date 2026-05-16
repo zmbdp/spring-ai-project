@@ -1,0 +1,17 @@
+spring:
+  ai:
+    openai:
+      api-key: ${QIANFAN_API_KEY}
+      base-url: https://qianfan.baidubce.com
+      chat:
+        options:
+          model: "ernie-4.5-turbo-128k"
+        completions-path: /v2/chat/completions
+      image:
+        options:
+          model: "flux.1-schnell"
+        imagesPath: /v2/images/generations
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"

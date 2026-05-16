@@ -1,0 +1,6 @@
+[    1086ms] [LOG] %c%s color: red; background: yellow; font-size: 24px; 警告！ @ /_/mss/boq-dots/_/js/k=boq-dots.DotsSplashUi_desktop_ms.zh_HK.yF4JMXE2J-s.2018.O/am=GAIFAAAAANgFDDA/d=1/excm=_b,_tp,homeview/ed=1/dg=0/wt=2/ujg=1/rs=ALs0n2NTe8CBjKqmon0use5oDoPqK4WNhg/dti=1/m=_b,_tp:280
+[    1086ms] [LOG] %c%s font-size: 18px; 使用此控制台可能允許攻擊者冒充你，並透過稱為 Self-XSS 的惡性攻擊盜取你的資料。
+請勿輸入或貼上任何你不明白的代碼。 @ /_/mss/boq-dots/_/js/k=boq-dots.DotsSplashUi_desktop_ms.zh_HK.yF4JMXE2J-s.2018.O/am=GAIFAAAAANgFDDA/d=1/excm=_b,_tp,homeview/ed=1/dg=0/wt=2/ujg=1/rs=ALs0n2NTe8CBjKqmon0use5oDoPqK4WNhg/dti=1/m=_b,_tp:280
+[    1156ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://www.googletagmanager.com/gtag/js?id=G-SYGF1G18MM:0
+[    2825ms] _.Hj
+[    6142ms] _.Hj
