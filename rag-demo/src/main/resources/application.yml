@@ -2,18 +2,21 @@ spring:
   ai:
     dashscope:
       api-key: ${DASHSCOPE_API_KEY}
+      chat: # ← 添加 chat 配置
+        options:
+          model: qwen-turbo  # 或 qwen-turbo, qwen-max
       embedding:
         options:
           model: text-embedding-v3
           dimensions: 512
-#    vectorstore:
-#      #      redis:
-#      #        initialize-schema: true    # 是否自动创建索引结构
-#      #        index-name: spring-ai-index   # 向量索引名称
-#      #        prefix: "embedding:"     # Redis Key 前缀
-#      pinecone:
-#        api-key: ${PINECONE_API_KEY}
-#        index-name: pinecone-inde
+    vectorstore:
+      #      redis:
+      #        initialize-schema: true    # 是否自动创建索引结构
+      #        index-name: spring-ai-index   # 向量索引名称
+      #        prefix: "embedding:"     # Redis Key 前缀
+      pinecone:
+        api-key: ${PINECONE_API_KEY}
+        index-name: pinecone-inde
 #
 #  data:
 #    redis:
