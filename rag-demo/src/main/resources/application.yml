@@ -8,7 +8,7 @@ spring:
       embedding:
         options:
           model: text-embedding-v3
-          dimensions: 512
+#          dimensions: 512
     vectorstore:
       #      redis:
       #        initialize-schema: true    # 是否自动创建索引结构
@@ -16,7 +16,7 @@ spring:
       #        prefix: "embedding:"     # Redis Key 前缀
       pinecone:
         api-key: ${PINECONE_API_KEY}
-        index-name: pinecone-inde
+        index-name: pinecone-index
 #
 #  data:
 #    redis:

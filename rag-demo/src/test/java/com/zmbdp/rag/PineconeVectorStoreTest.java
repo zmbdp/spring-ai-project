@@ -28,11 +28,17 @@ public class PineconeVectorStoreTest {
 //        Document doc4 = Document.builder()
 //                .text("基于Transformer的预训练模型在机器翻译中的迁移学习研究")
 //                .build();
-//        List<Document> documentList= List.of(doc, doc2, doc3, doc4);
-//
+//        Document doc5 = Document.builder()
+//                .text("机器学习是未来趋势")
+//                .build();
+//        Document doc6 = Document.builder()
+//                .text("机器学习!")
+//                .build();
+//        List<Document> documentList = List.of(doc, doc2, doc3, doc4, doc5, doc6);
+//        // 添加文档
 //        vectorStore.add(documentList);
 //        System.out.println("文档存储完成");
-
+        // 搜索文档
         List<Document> documents = vectorStore.similaritySearch("机器学习");
         documents.forEach(System.out::println);
     }
