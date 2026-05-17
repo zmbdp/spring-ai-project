@@ -8,7 +8,7 @@ spring:
       embedding:
         options:
           model: text-embedding-v3
-          dimensions: 512
+#          dimensions: 512
     vectorstore:
       #      redis:
       #        initialize-schema: true    # 是否自动创建索引结构
