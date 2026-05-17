@@ -10,7 +10,6 @@ import org.springframework.ai.model.transformer.SummaryMetadataEnricher;
 import org.springframework.ai.model.transformer.SummaryMetadataEnricher.SummaryType;
 import org.springframework.ai.reader.TextReader;
 import org.springframework.ai.transformer.splitter.TokenTextSplitter;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.io.Resource;
@@ -19,12 +18,15 @@ import java.util.List;
 
 @SpringBootTest
 public class TransformersTest {
-    @Autowired
-    private ChatModel chatModel;
 
+    private final ChatModel chatModel;
+
+    public TransformersTest(ChatModel chatModel) {
+        this.chatModel = chatModel;
+    }
 
     @Test
-    void testSplitter(@Value("classpath:/file/rule.txt")Resource resource){
+    void testSplitter(@Value("classpath:/file/rule.txt") Resource resource) {
         // 加载文档
         TextReader reader = new TextReader(resource);
         List<Document> documents = reader.get();
@@ -34,14 +36,14 @@ public class TransformersTest {
         TokenTextSplitter splitter = new TokenTextSplitter(500, 300, 5, 5000, true);
         List<Document> apply = splitter.apply(documents);
         System.out.println("文本拆分 size:" + apply.size());
-        apply.forEach(doc->{
+        apply.forEach(doc -> {
             System.out.println(doc.getText());
             System.out.println(doc.getMetadata());
         });
     }
 
     @Test
-    void testEnricher(@Value("classpath:/file/rule.txt")Resource resource){
+    void testEnricher(@Value("classpath:/file/rule.txt") Resource resource) {
         // 加载文档
         TextReader reader = new TextReader(resource);
         List<Document> documents = reader.get();
@@ -67,14 +69,14 @@ public class TransformersTest {
         List<Document> enricherDoc = enricher.apply(splitterDoc);
         System.out.println("关键词生成 size:" + enricherDoc.size());
 
-        enricherDoc.forEach(doc->{
+        enricherDoc.forEach(doc -> {
             System.out.println(doc.getText());
             System.out.println(doc.getMetadata());
         });
     }
 
     @Test
-    void testSummaryEnricher(@Value("classpath:/file/rule.txt")Resource resource){
+    void testSummaryEnricher(@Value("classpath:/file/rule.txt") Resource resource) {
         // 加载文档
         TextReader reader = new TextReader(resource);
         List<Document> documents = reader.get();
@@ -97,7 +99,7 @@ public class TransformersTest {
 
         List<Document> enricherDoc = summaryMetadataEnricher.apply(splitterDoc);
 
-        enricherDoc.forEach(doc->{
+        enricherDoc.forEach(doc -> {
             System.out.println(doc.getText());
             System.out.println(doc.getMetadata());
         });
