@@ -19,7 +19,7 @@ public class MySQLDocumentReaderTest {
     void setUp() {
 
         List<String> contentColumns = List.of("User", "Host"); //文档的字段
-        List<String> metadataColumns = List.of("Select_priv", "Insert_priv");  //元数据的字段
+        List<String> metadataColumns = List.of("Select_priv", "Insert_priv"); //元数据的字段
 
         String query = "SELECT * FROM user LIMIT 10;";
         // 创建 MySQLResource 对象，设置你的数据库信息（比如 ip，端口，用户名，密码，查询语句，文档的字段，元数据的字段）
