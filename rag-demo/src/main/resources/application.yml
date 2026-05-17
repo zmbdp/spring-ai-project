@@ -16,7 +16,7 @@ spring:
       #        prefix: "embedding:"     # Redis Key 前缀
       pinecone:
         api-key: ${PINECONE_API_KEY}
-        index-name: pinecone-inde
+        index-name: pinecone-index
 #
 #  data:
 #    redis:
