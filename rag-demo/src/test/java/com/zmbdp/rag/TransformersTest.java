@@ -2,7 +2,6 @@ package com.zmbdp.rag;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.ai.chat.model.ChatModel;
-import org.springframework.ai.chat.prompt.PromptTemplate;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.document.MetadataMode;
 import org.springframework.ai.model.transformer.KeywordMetadataEnricher;
@@ -10,6 +9,7 @@ import org.springframework.ai.model.transformer.SummaryMetadataEnricher;
 import org.springframework.ai.model.transformer.SummaryMetadataEnricher.SummaryType;
 import org.springframework.ai.reader.TextReader;
 import org.springframework.ai.transformer.splitter.TokenTextSplitter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.io.Resource;
@@ -21,6 +21,7 @@ public class TransformersTest {
 
     private final ChatModel chatModel;
 
+    @Autowired
     public TransformersTest(ChatModel chatModel) {
         this.chatModel = chatModel;
     }
@@ -54,18 +55,19 @@ public class TransformersTest {
         System.out.println("文本拆分 size:" + splitterDoc.size());
 
         // 关键词生成
+        KeywordMetadataEnricher enricher = KeywordMetadataEnricher.builder(chatModel)
+                .keywordCount(3)
+                .build();
+
 //        KeywordMetadataEnricher enricher = KeywordMetadataEnricher.builder(chatModel)
+//                .keywordsTemplate(new PromptTemplate("""
+//                        根据给定的文本: {context_str}, 生成关键字, 只允许以下关键字
+//                        [会员宗旨, 会员类型, 会员注册, 积分制度, 会员权益, 会员行为, 会员服务, 公告, 隐私保护]
+//                        只返回关键字, 其他信息不返回
+//                        """))
 //                .keywordCount(3)
 //                .build();
 
-        KeywordMetadataEnricher enricher = KeywordMetadataEnricher.builder(chatModel)
-                .keywordsTemplate(new PromptTemplate("""
-                        根据给定的文本: {context_str}, 生成关键字, 只允许以下关键字
-                        [会员宗旨, 会员类型, 会员注册, 积分制度, 会员权益, 会员行为, 会员服务, 公告, 隐私保护]
-                        只返回关键字, 其他信息不返回
-                        """))
-                .keywordCount(3)
-                .build();
         List<Document> enricherDoc = enricher.apply(splitterDoc);
         System.out.println("关键词生成 size:" + enricherDoc.size());
 
