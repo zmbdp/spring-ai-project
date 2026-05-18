@@ -1,6 +1,7 @@
 package com.zmbdp.agents.config;
 
 import com.zmbdp.agents.ChainWorkflow;
+import com.zmbdp.agents.OrchestratorWorkers;
 import com.zmbdp.agents.ParallelizationWorkflow;
 import com.zmbdp.agents.RoutingWorkflow;
 import org.springframework.ai.chat.client.ChatClient;
@@ -59,62 +60,61 @@ public class AgentConfig {
 //        };
 //    }
 
-    @Bean
-    public CommandLineRunner commandLineRunner(ChatClient.Builder chatClientBuilder) {
-
-        return args -> {
-            // 定义四个简单明了的处理路线 (更短的提示词)
-            Map<String, String> simpleRoutes = Map.of(
-                    "财务",
-                    "你是财务助手, 请回答账单、扣费、退款等问题. 开头写【财务】. ",
-
-                    "技术",
-                    "你是技术支持, 请回答登录、功能使用、系统错误等问题. 开头写【技术】. ",
-
-                    "账户",
-                    "你是账户助手, 请处理账号找回、密码重置、安全验证等问题. 开头写【账户】. ",
-
-                    "产品",
-                    "你是产品顾问, 请回答功能咨询、如何使用、推荐操作等问题. 开头写【产品】. "
-            );
-
-            // 模拟三个非常简短的用户提问 (贴近日常对话)
-            List<String> simpleTickets = List.of(
-                    "我忘记密码了, 登不进去账号",           // → 应路由到"账户"
-                    "上个月怎么多扣了50块钱? ",            // → 应路由到"财务"
-                    "导出数据的功能在哪? 怎么用? "         // → 应路由到"产品"
-            );
-
-            var routerWorkflow = new RoutingWorkflow(chatClientBuilder.build());
-
-            int i = 1;
-            for (String ticket : simpleTickets) {
-                System.out.println("\n💬 问题 " + i++);
-                System.out.println("------------------------------");
-                System.out.println(ticket);
-                System.out.println("------------------------------");
-
-                String response = routerWorkflow.route(ticket, simpleRoutes);
-                System.out.println(response);
-            }
-        };
-    }
-
 //    @Bean
 //    public CommandLineRunner commandLineRunner(ChatClient.Builder chatClientBuilder) {
-//        var chatClient = chatClientBuilder.build();
-//        return args -> {
 //
-//            OrchestratorWorkers.FinalResponse response = new OrchestratorWorkers(chatClient)
-//                    .process("为一款新型环保可重复使用的保温杯撰写产品介绍文案");
-//            // 打印最终结果
-//            System.out.println("\n\n最终聚合结果：\n");
-//            for (int i = 0; i < response.workerResponses().size(); i++) {
-//                String style = response.workerResponses().get(i).startsWith("【专业版】") ? "专业" : "亲民";
-//                System.out.println(" [" + style + "风格] 输出：\n" + response.workerResponses().get(i) + "\n");
+//        return args -> {
+//            // 定义四个简单明了的处理路线 (更短的提示词)
+//            Map<String, String> simpleRoutes = Map.of(
+//                    "财务",
+//                    "你是财务助手, 请回答账单、扣费、退款等问题. 开头写【财务】. ",
+//
+//                    "技术",
+//                    "你是技术支持, 请回答登录、功能使用、系统错误等问题. 开头写【技术】. ",
+//
+//                    "账户",
+//                    "你是账户助手, 请处理账号找回、密码重置、安全验证等问题. 开头写【账户】. ",
+//
+//                    "产品",
+//                    "你是产品顾问, 请回答功能咨询、如何使用、推荐操作等问题. 开头写【产品】. "
+//            );
+//
+//            // 模拟三个非常简短的用户提问 (贴近日常对话)
+//            List<String> simpleTickets = List.of(
+//                    "我忘记密码了, 登不进去账号",           // → 应路由到"账户"
+//                    "上个月怎么多扣了50块钱? ",            // → 应路由到"财务"
+//                    "导出数据的功能在哪? 怎么用? "         // → 应路由到"产品"
+//            );
+//
+//            var routerWorkflow = new RoutingWorkflow(chatClientBuilder.build());
+//
+//            int i = 1;
+//            for (String ticket : simpleTickets) {
+//                System.out.println("\n💬 问题 " + i++);
+//                System.out.println("------------------------------");
+//                System.out.println(ticket);
+//                System.out.println("------------------------------");
+//
+//                String response = routerWorkflow.route(ticket, simpleRoutes);
+//                System.out.println(response);
 //            }
 //        };
 //    }
+
+    @Bean
+    public CommandLineRunner commandLineRunner(ChatClient.Builder chatClientBuilder) {
+        var chatClient = chatClientBuilder.build();
+        return args -> {
+            OrchestratorWorkers.FinalResponse response = new OrchestratorWorkers(chatClient)
+                    .process("为一款新型环保可重复使用的保温杯撰写产品介绍文案");
+            // 打印最终结果
+            System.out.println("\n\n最终聚合结果：\n");
+            for (int i = 0; i < response.workerResponses().size(); i++) {
+                String style = response.workerResponses().get(i).startsWith("【专业版】") ? "专业" : "亲民";
+                System.out.println(" [" + style + "风格] 输出：\n" + response.workerResponses().get(i) + "\n");
+            }
+        };
+    }
 
 //    @Bean
 //    public CommandLineRunner commandLineRunner(ChatClient.Builder chatClientBuilder) {
