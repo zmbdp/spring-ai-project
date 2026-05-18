@@ -121,7 +121,7 @@ public class AgentConfig {
 //        var chatClient = chatClientBuilder.build();
 //        return args -> {
 //            EvaluatorOptimizer.RefinedResponse refinedResponse = new EvaluatorOptimizer(chatClient).loop("""
-//               我正在找一份专业相关的实习工作, 需要每周去公司3天.
+//               我正在找一份专业相关的实习工作, 需要每周去公司 3 天.
 //               如何写一段话, 向辅导员说明情况, 并申请办理实习手续?
 //               希望表达出我对学业的重视, 同时说明实习对未来就业的重要性.
 //               """);
