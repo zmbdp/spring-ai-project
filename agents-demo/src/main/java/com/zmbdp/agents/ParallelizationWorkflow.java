@@ -17,21 +17,21 @@ public class ParallelizationWorkflow {
     }
 
     public List<String> parallel(String prompt, List<String> inputs, int nWorkers) {
-        Assert.notNull(prompt, "Prompt cannot be null");
-        Assert.notEmpty(inputs, "Inputs list cannot be empty");
-        Assert.isTrue(nWorkers > 0, "Number of workers must be greater than 0");
+        Assert.notNull(prompt, "提示词不能为 null");
+        Assert.notEmpty(inputs, "输入列表不能为空");
+        Assert.isTrue(nWorkers > 0, "工作线程数必须大于 0");
 
         ExecutorService executor = Executors.newFixedThreadPool(nWorkers);
         try {
             List<CompletableFuture<String>> futures = inputs.stream()
                     .map(input -> CompletableFuture.supplyAsync(() -> {
                         try {
-                            return chatClient.prompt(prompt + "\nInput: " + input).call().content();
+                            return chatClient.prompt(prompt + "\n输入: " + input).call().content();
                         } catch (Exception e) {
-                            throw new RuntimeException("Failed to process input: " + input, e);
+                            throw new RuntimeException("处理输入失败: " + input, e);
                         }
                     }, executor))
-                    .collect(Collectors.toList());
+                    .toList();
 
             // Wait for all tasks to complete
             CompletableFuture<Void> allFutures = CompletableFuture.allOf(
