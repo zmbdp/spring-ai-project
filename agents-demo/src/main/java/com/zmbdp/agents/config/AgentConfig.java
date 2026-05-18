@@ -1,7 +1,9 @@
 package com.zmbdp.agents.config;
 
 import com.zmbdp.agents.ChainWorkflow;
+import com.zmbdp.agents.OrchestratorWorkers;
 import com.zmbdp.agents.ParallelizationWorkflow;
+import com.zmbdp.agents.RoutingWorkflow;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -33,30 +35,30 @@ public class AgentConfig {
 //        };
 //    }
 
-    @Bean
-    public CommandLineRunner commandLineRunner(ChatClient.Builder chatClientBuilder) {
-
-        return args -> {
-            List<String> parallelResponse = new ParallelizationWorkflow(chatClientBuilder.build())
-                    .parallel(
-                            "分析数字化转型对此部门的主要影响和应对建议, 每条不超过两句话. ",
-                            List.of(
-                                    "销售部：依赖人脉, 缺乏数据工具",
-                                    "技术部：系统老旧, 人手紧张",
-                                    "人力资源部：员工不适应, 培训不足",
-                                    "财务部：控制成本, 担心安全"
-                            ),
-                            4
-                    );
-
-            // 输出结果
-            System.out.println("=== 数字化转型简要分析 ===");
-            List.of("销售部", "技术部", "人力资源部", "财务部")
-                    .forEach(dept ->
-                            System.out.println("\n " + dept + "：" + parallelResponse.get(List.of("销售部", "技术部", "人力资源部", "财务部").indexOf(dept)))
-                    );
-        };
-    }
+//    @Bean
+//    public CommandLineRunner commandLineRunner(ChatClient.Builder chatClientBuilder) {
+//
+//        return args -> {
+//            List<String> parallelResponse = new ParallelizationWorkflow(chatClientBuilder.build())
+//                    .parallel(
+//                            "分析数字化转型对此部门的主要影响和应对建议, 每条不超过两句话. ",
+//                            List.of(
+//                                    "销售部：依赖人脉, 缺乏数据工具",
+//                                    "技术部：系统老旧, 人手紧张",
+//                                    "人力资源部：员工不适应, 培训不足",
+//                                    "财务部：控制成本, 担心安全"
+//                            ),
+//                            4
+//                    );
+//
+//            // 输出结果
+//            System.out.println("=== 数字化转型简要分析 ===");
+//            List.of("销售部", "技术部", "人力资源部", "财务部")
+//                    .forEach(dept ->
+//                            System.out.println("\n " + dept + "：" + parallelResponse.get(List.of("销售部", "技术部", "人力资源部", "财务部").indexOf(dept)))
+//                    );
+//        };
+//    }
 
 //    @Bean
 //    public CommandLineRunner commandLineRunner(ChatClient.Builder chatClientBuilder) {
@@ -99,28 +101,27 @@ public class AgentConfig {
 //        };
 //    }
 
-//    @Bean
-//    public CommandLineRunner commandLineRunner(ChatClient.Builder chatClientBuilder) {
-//        var chatClient = chatClientBuilder.build();
-//        return args -> {
-//
-//            OrchestratorWorkers.FinalResponse response = new OrchestratorWorkers(chatClient)
-//                    .process("为一款新型环保可重复使用的保温杯撰写产品介绍文案");
-//            // 打印最终结果
-//            System.out.println("\n\n最终聚合结果：\n");
-//            for (int i = 0; i < response.workerResponses().size(); i++) {
-//                String style = response.workerResponses().get(i).startsWith("【专业版】") ? "专业" : "亲民";
-//                System.out.println(" [" + style + "风格] 输出：\n" + response.workerResponses().get(i) + "\n");
-//            }
-//        };
-//    }
+    @Bean
+    public CommandLineRunner commandLineRunner(ChatClient.Builder chatClientBuilder) {
+        var chatClient = chatClientBuilder.build();
+        return args -> {
+            OrchestratorWorkers.FinalResponse response = new OrchestratorWorkers(chatClient)
+                    .process("为一款新型环保可重复使用的保温杯撰写产品介绍文案");
+            // 打印最终结果
+            System.out.println("\n\n最终聚合结果：\n");
+            for (int i = 0; i < response.workerResponses().size(); i++) {
+                String style = response.workerResponses().get(i).startsWith("【专业版】") ? "专业" : "亲民";
+                System.out.println(" [" + style + "风格] 输出：\n" + response.workerResponses().get(i) + "\n");
+            }
+        };
+    }
 
 //    @Bean
 //    public CommandLineRunner commandLineRunner(ChatClient.Builder chatClientBuilder) {
 //        var chatClient = chatClientBuilder.build();
 //        return args -> {
 //            EvaluatorOptimizer.RefinedResponse refinedResponse = new EvaluatorOptimizer(chatClient).loop("""
-//               我正在找一份专业相关的实习工作, 需要每周去公司3天.
+//               我正在找一份专业相关的实习工作, 需要每周去公司 3 天.
 //               如何写一段话, 向辅导员说明情况, 并申请办理实习手续?
 //               希望表达出我对学业的重视, 同时说明实习对未来就业的重要性.
 //               """);
