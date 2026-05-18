@@ -1,0 +1,10 @@
+spring:
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+      chat: # ← 添加 chat 配置
+        options:
+          model: qwen-turbo  # 或 qwen-turbo, qwen-max
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %5p ${PID:- } --- [%15.15t] %-40.40logger{39} : %m%n%wEx"
